@@ -1,0 +1,5 @@
+#Start recording tcl command: 11/27/2022 15:51:58
+#Project Location: D:/diamond/code/project6; Project name: project6
+prj_project open "D:/diamond/code/project6/project6.ldf"
+prj_run PAR -impl impl1 -task PARTrace
+#Stop recording: 11/27/2022 16:21:07

@@ -1,0 +1,5 @@
+
+
+-g RamCfg:Reset
+
+-path "C:/VHDL/lab/lab6"  

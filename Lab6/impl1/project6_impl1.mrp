@@ -1,0 +1,732 @@
+
+             Lattice Mapping Report File for Design Module 'main'
+
+
+Design Information
+------------------
+
+Command line:   map -a MachXO2 -p LCMXO2-4000HC -t CSBGA132 -s 4 -oc Commercial
+     project6_impl1.ngd -o project6_impl1_map.ncd -pr project6_impl1.prf -mp
+     project6_impl1.mrp -lpf C:/VHDL/lab/lab6/impl1/project6_impl1.lpf -lpf
+     C:/VHDL/lab/lab6/project6.lpf -c 0 -gui -msgset
+     C:/VHDL/lab/lab6/promote.xml 
+Target Vendor:  LATTICE
+Target Device:  LCMXO2-4000HCCSBGA132
+Target Performance:   4
+Mapper:  xo2c00,  version:  Diamond (64-bit) 3.12.0.240.2
+Mapped on:  12/08/22  20:56:27
+
+Design Summary
+--------------
+
+   Number of registers:    318 out of  4635 (7%)
+      PFU registers:          318 out of  4320 (7%)
+      PIO registers:            0 out of   315 (0%)
+   Number of SLICEs:       553 out of  2160 (26%)
+      SLICEs as Logic/ROM:    553 out of  2160 (26%)
+      SLICEs as RAM:            0 out of  1620 (0%)
+      SLICEs as Carry:        158 out of  2160 (7%)
+   Number of LUT4s:        1102 out of  4320 (26%)
+      Number used as logic LUTs:        786
+      Number used as distributed RAM:     0
+      Number used as ripple logic:      316
+      Number used as shift registers:     0
+   Number of PIO sites used: 14 + 4(JTAG) out of 105 (17%)
+   Number of block RAMs:  0 out of 10 (0%)
+   Number of GSRs:        1 out of 1 (100%)
+   EFB used :        No
+   JTAG used :       No
+   Readback used :   No
+   Oscillator used : No
+   Startup used :    No
+   POR :             On
+   Bandgap :         On
+   Number of Power Controller:  0 out of 1 (0%)
+   Number of Dynamic Bank Controller (BCINRD):  0 out of 6 (0%)
+   Number of Dynamic Bank Controller (BCLVDSO):  0 out of 1 (0%)
+   Number of DCCA:  0 out of 8 (0%)
+   Number of DCMA:  0 out of 2 (0%)
+   Number of PLLs:  0 out of 2 (0%)
+   Number of DQSDLLs:  0 out of 2 (0%)
+   Number of CLKDIVC:  0 out of 4 (0%)
+   Number of ECLKSYNCA:  0 out of 4 (0%)
+   Number of ECLKBRIDGECS:  0 out of 2 (0%)
+   Notes:-
+      1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of
+     distributed RAMs) + 2*(Number of ripple logic)
+      2. Number of logic LUT4s does not include count of distributed RAM and
+     ripple logic.
+   Number of clocks:  5
+     Net clock_c: 191 loads, 191 rising, 0 falling (Driver: PIO clock )
+     Net clk_100us: 4 loads, 4 rising, 0 falling (Driver: clk_100us_750 )
+     Net clk_1us: 2 loads, 2 rising, 0 falling (Driver: clk_1us_755 )
+
+                                    Page 1
+
+
+
+
+Design:  main                                          Date:  12/08/22  20:56:27
+
+Design Summary (cont)
+---------------------
+     Net clock_c_derived_1: 1 loads, 1 rising, 0 falling (Driver: clk_500ms_753
+     )
+     Net clk_20ms: 1 loads, 1 rising, 0 falling (Driver: clk_20ms_748 )
+   Number of Clock Enables:  40
+     Net clock_c_enable_180: 23 loads, 23 LSLICEs
+     Net tMeasure_DQ_N_1482: 1 loads, 1 LSLICEs
+     Net clock_c_enable_9: 1 loads, 1 LSLICEs
+     Net clock_c_enable_10: 1 loads, 1 LSLICEs
+     Net clock_c_enable_178: 2 loads, 2 LSLICEs
+     Net clock_c_enable_113: 16 loads, 16 LSLICEs
+     Net clock_c_enable_120: 4 loads, 4 LSLICEs
+     Net clock_c_enable_143: 16 loads, 16 LSLICEs
+     Net clock_c_enable_17: 1 loads, 1 LSLICEs
+     Net clock_c_enable_18: 1 loads, 1 LSLICEs
+     Net clock_c_enable_161: 12 loads, 12 LSLICEs
+     Net clock_c_enable_24: 1 loads, 1 LSLICEs
+     Net clock_c_enable_26: 1 loads, 1 LSLICEs
+     Net clock_c_enable_27: 1 loads, 1 LSLICEs
+     Net clock_c_enable_185: 3 loads, 3 LSLICEs
+     Net clock_c_enable_186: 17 loads, 17 LSLICEs
+     Net clock_c_enable_183: 3 loads, 3 LSLICEs
+     Net key2_c: 1 loads, 1 LSLICEs
+     Net clock_c_enable_184: 3 loads, 3 LSLICEs
+     Net clock_c_enable_208: 2 loads, 2 LSLICEs
+     Net clock_c_enable_206: 2 loads, 2 LSLICEs
+     Net clock_c_enable_128: 4 loads, 4 LSLICEs
+     Net clock_c_enable_172: 1 loads, 1 LSLICEs
+     Net clock_c_enable_173: 1 loads, 1 LSLICEs
+     Net clock_c_enable_207: 2 loads, 2 LSLICEs
+     Net clock_c_enable_187: 1 loads, 1 LSLICEs
+     Net clock_c_enable_188: 1 loads, 1 LSLICEs
+     Net clock_c_enable_189: 1 loads, 1 LSLICEs
+     Net clock_c_enable_190: 1 loads, 1 LSLICEs
+     Net clock_c_enable_191: 1 loads, 1 LSLICEs
+     Net clock_c_enable_192: 1 loads, 1 LSLICEs
+     Net clock_c_enable_197: 3 loads, 3 LSLICEs
+     Net clock_c_enable_198: 1 loads, 1 LSLICEs
+     Net clock_c_enable_199: 1 loads, 1 LSLICEs
+     Net clock_c_enable_200: 1 loads, 1 LSLICEs
+     Net clock_c_enable_201: 1 loads, 1 LSLICEs
+     Net clock_c_enable_202: 1 loads, 1 LSLICEs
+     Net clock_c_enable_203: 1 loads, 1 LSLICEs
+     Net clock_c_enable_204: 1 loads, 1 LSLICEs
+     Net clock_c_enable_205: 1 loads, 1 LSLICEs
+   Number of LSRs:  11
+     Net write_cnt_4: 1 loads, 1 LSLICEs
+     Net led1_c_1: 1 loads, 1 LSLICEs
+     Net clock_c_enable_161: 3 loads, 3 LSLICEs
+     Net n11534: 17 loads, 17 LSLICEs
+     Net key1_c: 1 loads, 1 LSLICEs
+     Net n28391: 17 loads, 17 LSLICEs
+     Net n11530: 2 loads, 2 LSLICEs
+     Net n18664: 2 loads, 2 LSLICEs
+     Net n11520: 17 loads, 17 LSLICEs
+     Net n28407: 17 loads, 17 LSLICEs
+     Net n18010: 3 loads, 3 LSLICEs
+
+                                    Page 2
+
+
+
+
+Design:  main                                          Date:  12/08/22  20:56:27
+
+Design Summary (cont)
+---------------------
+   Number of nets driven by tri-state buffers:  0
+   Top 10 highest fanout non-clock nets:
+     Net STATE_2: 146 loads
+     Net STATE_1: 134 loads
+     Net STATE_0: 60 loads
+     Net led1_c_1: 43 loads
+     Net n2070: 35 loads
+     Net select_segment_0: 30 loads
+     Net n11520: 28 loads
+     Net select_segment_1: 26 loads
+     Net clock_c_enable_180: 23 loads
+     Net data_cnt_1: 23 loads
+
+
+
+
+   Number of warnings:  0
+   Number of errors:    0
+     
+
+Design Errors/Warnings
+----------------------
+
+   No errors or warnings present.
+
+IO (PIO) Attributes
+-------------------
+
++---------------------+-----------+-----------+------------+
+| IO Name             | Direction | Levelmode | IO         |
+|                     |           |  IO_TYPE  | Register   |
++---------------------+-----------+-----------+------------+
+| led1[2]             | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| led1[1]             | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| data                | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| rck                 | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| sck                 | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| tMeasure_DQ         | BIDIR     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| led1[0]             | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| led2[2]             | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| led2[1]             | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| led2[0]             | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| clock               | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| key1                | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+
+                                    Page 3
+
+
+
+
+Design:  main                                          Date:  12/08/22  20:56:27
+
+IO (PIO) Attributes (cont)
+--------------------------
+| key2                | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| key3                | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+
+Removed logic
+-------------
+
+Signal n7582 was merged into signal tMeasure_DQ_N_1470
+Signal n28467 was merged into signal select_segment_1
+Signal n11491 was merged into signal key1_c
+Signal clk_20ms_enable_1 was merged into signal key2_c
+Signal GND_net undriven or does not drive anything - clipped.
+Signal add_4072_19/CO undriven or does not drive anything - clipped.
+Signal clk_1us_cnt_1975_add_4_33/S1 undriven or does not drive anything -
+     clipped.
+Signal clk_1us_cnt_1975_add_4_33/CO undriven or does not drive anything -
+     clipped.
+Signal add_4065_1/S1 undriven or does not drive anything - clipped.
+Signal add_4065_1/S0 undriven or does not drive anything - clipped.
+Signal add_4065_1/CI undriven or does not drive anything - clipped.
+Signal add_675_33/S1 undriven or does not drive anything - clipped.
+Signal add_675_33/CO undriven or does not drive anything - clipped.
+Signal add_4065_cout/S1 undriven or does not drive anything - clipped.
+Signal add_4065_cout/CO undriven or does not drive anything - clipped.
+Signal clk_20ms_cnt_1972_add_4_1/S0 undriven or does not drive anything -
+     clipped.
+Signal clk_20ms_cnt_1972_add_4_1/CI undriven or does not drive anything -
+     clipped.
+Signal add_4014_add_1_2/S0 undriven or does not drive anything - clipped.
+Signal add_4014_add_1_2/CI undriven or does not drive anything - clipped.
+Signal add_4071_2/S0 undriven or does not drive anything - clipped.
+Signal add_4071_2/CI undriven or does not drive anything - clipped.
+Signal clk_20ms_cnt_1972_add_4_33/S1 undriven or does not drive anything -
+     clipped.
+Signal clk_20ms_cnt_1972_add_4_33/CO undriven or does not drive anything -
+     clipped.
+Signal clk_500ms_cnt_1974_add_4_1/S0 undriven or does not drive anything -
+     clipped.
+Signal clk_500ms_cnt_1974_add_4_1/CI undriven or does not drive anything -
+     clipped.
+Signal add_4014_add_1_cout/S1 undriven or does not drive anything - clipped.
+Signal add_4014_add_1_cout/CO undriven or does not drive anything - clipped.
+Signal add_1970_1/S0 undriven or does not drive anything - clipped.
+Signal add_1970_1/CI undriven or does not drive anything - clipped.
+Signal sub_1764_add_2_25/S1 undriven or does not drive anything - clipped.
+Signal sub_1764_add_2_25/S0 undriven or does not drive anything - clipped.
+Signal clk_500ms_cnt_1974_add_4_33/S1 undriven or does not drive anything -
+     clipped.
+Signal clk_500ms_cnt_1974_add_4_33/CO undriven or does not drive anything -
+     clipped.
+Signal clk_100us_cnt_1973_add_4_1/S0 undriven or does not drive anything -
+     clipped.
+Signal clk_100us_cnt_1973_add_4_1/CI undriven or does not drive anything -
+     clipped.
+Signal add_1970_cout/S1 undriven or does not drive anything - clipped.
+
+                                    Page 4
+
+
+
+
+Design:  main                                          Date:  12/08/22  20:56:27
+
+Removed logic (cont)
+--------------------
+Signal add_1970_cout/CO undriven or does not drive anything - clipped.
+Signal add_4060_2/S0 undriven or does not drive anything - clipped.
+Signal add_4060_2/CI undriven or does not drive anything - clipped.
+Signal add_4071_20/CO undriven or does not drive anything - clipped.
+Signal sub_1764_add_2_1/S1 undriven or does not drive anything - clipped.
+Signal sub_1764_add_2_1/S0 undriven or does not drive anything - clipped.
+Signal sub_1764_add_2_1/CI undriven or does not drive anything - clipped.
+Signal sub_1764_add_2_3/S1 undriven or does not drive anything - clipped.
+Signal sub_1764_add_2_3/S0 undriven or does not drive anything - clipped.
+Signal sub_1764_add_2_5/S1 undriven or does not drive anything - clipped.
+Signal sub_1764_add_2_5/S0 undriven or does not drive anything - clipped.
+Signal sub_1764_add_2_7/S1 undriven or does not drive anything - clipped.
+Signal sub_1764_add_2_7/S0 undriven or does not drive anything - clipped.
+Signal sub_1764_add_2_9/S1 undriven or does not drive anything - clipped.
+Signal sub_1764_add_2_9/S0 undriven or does not drive anything - clipped.
+Signal sub_1764_add_2_11/S1 undriven or does not drive anything - clipped.
+Signal sub_1764_add_2_11/S0 undriven or does not drive anything - clipped.
+Signal sub_1764_add_2_13/S1 undriven or does not drive anything - clipped.
+Signal sub_1764_add_2_13/S0 undriven or does not drive anything - clipped.
+Signal sub_1764_add_2_15/S1 undriven or does not drive anything - clipped.
+Signal sub_1764_add_2_15/S0 undriven or does not drive anything - clipped.
+Signal sub_1764_add_2_17/S1 undriven or does not drive anything - clipped.
+Signal sub_1764_add_2_17/S0 undriven or does not drive anything - clipped.
+Signal sub_1764_add_2_19/S1 undriven or does not drive anything - clipped.
+Signal sub_1764_add_2_19/S0 undriven or does not drive anything - clipped.
+Signal sub_1764_add_2_27/S1 undriven or does not drive anything - clipped.
+Signal sub_1764_add_2_27/S0 undriven or does not drive anything - clipped.
+Signal sub_1764_add_2_21/S1 undriven or does not drive anything - clipped.
+Signal sub_1764_add_2_21/S0 undriven or does not drive anything - clipped.
+Signal sub_1764_add_2_23/S1 undriven or does not drive anything - clipped.
+Signal sub_1764_add_2_23/S0 undriven or does not drive anything - clipped.
+Signal sub_1764_add_2_29/S1 undriven or does not drive anything - clipped.
+Signal sub_1764_add_2_29/S0 undriven or does not drive anything - clipped.
+Signal sub_1764_add_2_31/S1 undriven or does not drive anything - clipped.
+Signal sub_1764_add_2_31/S0 undriven or does not drive anything - clipped.
+Signal sub_1764_add_2_33/S0 undriven or does not drive anything - clipped.
+Signal sub_1764_add_2_33/CO undriven or does not drive anything - clipped.
+Signal add_4060_cout/S1 undriven or does not drive anything - clipped.
+Signal add_4060_cout/CO undriven or does not drive anything - clipped.
+Signal clk_100us_cnt_1973_add_4_33/S1 undriven or does not drive anything -
+     clipped.
+Signal clk_100us_cnt_1973_add_4_33/CO undriven or does not drive anything -
+     clipped.
+Signal add_675_1/S0 undriven or does not drive anything - clipped.
+Signal add_675_1/CI undriven or does not drive anything - clipped.
+Signal add_4072_1/S1 undriven or does not drive anything - clipped.
+Signal add_4072_1/S0 undriven or does not drive anything - clipped.
+Signal add_4072_1/CI undriven or does not drive anything - clipped.
+Signal clk_1us_cnt_1975_add_4_1/S0 undriven or does not drive anything -
+     clipped.
+Signal clk_1us_cnt_1975_add_4_1/CI undriven or does not drive anything -
+     clipped.
+Block i4026_1_lut was optimized away.
+Block i4013_1_lut_rep_497 was optimized away.
+Block i7801_1_lut was optimized away.
+Block i7802_1_lut was optimized away.
+
+                                    Page 5
+
+
+
+
+Design:  main                                          Date:  12/08/22  20:56:27
+
+Removed logic (cont)
+--------------------
+Block i1 was optimized away.
+
+     
+
+GSR Usage
+---------
+
+GSR Component:
+   The Global Set Reset (GSR) resource has been used to implement a global reset
+        of the design. The reset signal used for GSR control is 'key3_c'.
+        
+
+     GSR Property:
+   The design components with GSR property set to ENABLED will respond to global
+        set reset while the components with GSR property set to DISABLED will
+        not.
+        
+
+     Components with disabled GSR Property
+-------------------------------------
+
+     These components have the GSR property set to DISABLED. The components will
+     not respond to the reset signal 'key3_c' via the GSR component.
+
+     Type and number of components of the type: 
+   Register = 229 
+
+     Type and instance name of component: 
+   Register : clk_100us_750
+   Register : sck_751
+   Register : clk_1us_755
+   Register : rck_757
+   Register : t_decimal_1_i0_i0
+   Register : data_758
+   Register : t_decimal_2_i0_i0
+   Register : t_decimal__i9
+   Register : t_decimal__i8
+   Register : t_decimal__i7
+   Register : t_decimal_3_i0_i0
+   Register : t_decimal_4_i0_i0
+   Register : t_decimal_5_i0_i0
+   Register : clk_500ms_753
+   Register : num_delay_i0_i0
+   Register : pm_i0
+   Register : t_decimal__i6
+   Register : t_decimal__i5
+   Register : t_decimal__i4
+   Register : data_reg__i1
+   Register : t_decimal__i3
+   Register : t_decimal__i2
+   Register : t_decimal__i1
+   Register : num_delay_i0_i9
+   Register : num_delay_i0_i8
+   Register : num_delay_i0_i7
+   Register : num_delay_i0_i6
+   Register : select_segment_i2_1977__i0
+
+                                    Page 6
+
+
+
+
+Design:  main                                          Date:  12/08/22  20:56:27
+
+GSR Usage (cont)
+----------------
+   Register : write_cnt_1976__i4
+   Register : write_cnt_1976__i3
+   Register : write_cnt_1976__i2
+   Register : write_cnt_1976__i1
+   Register : clk_500ms_cnt_1974__i31
+   Register : clk_500ms_cnt_1974__i30
+   Register : clk_500ms_cnt_1974__i29
+   Register : clk_500ms_cnt_1974__i28
+   Register : clk_500ms_cnt_1974__i27
+   Register : clk_500ms_cnt_1974__i26
+   Register : clk_500ms_cnt_1974__i25
+   Register : clk_500ms_cnt_1974__i24
+   Register : clk_500ms_cnt_1974__i23
+   Register : clk_500ms_cnt_1974__i22
+   Register : clk_500ms_cnt_1974__i21
+   Register : clk_500ms_cnt_1974__i20
+   Register : clk_500ms_cnt_1974__i19
+   Register : clk_500ms_cnt_1974__i18
+   Register : clk_500ms_cnt_1974__i17
+   Register : clk_500ms_cnt_1974__i16
+   Register : data_wr_i0_i4
+   Register : data_wr_i0_i2
+   Register : t_decimal_5_i0_i3
+   Register : t_decimal_5_i0_i2
+   Register : t_decimal_5_i0_i1
+   Register : t_decimal_4_i0_i3
+   Register : t_decimal_4_i0_i2
+   Register : t_decimal_4_i0_i1
+   Register : t_decimal_3_i0_i3
+   Register : t_decimal_3_i0_i2
+   Register : t_decimal_3_i0_i1
+   Register : t_decimal_2_i0_i3
+   Register : t_decimal_2_i0_i2
+   Register : t_decimal_2_i0_i1
+   Register : t_decimal_1_i0_i3
+   Register : t_decimal_1_i0_i2
+   Register : t_decimal_1_i0_i1
+   Register : clk_500ms_cnt_1974__i15
+   Register : t_decimal__i19
+   Register : t_decimal__i18
+   Register : t_decimal__i17
+   Register : t_decimal__i16
+   Register : t_decimal__i15
+   Register : t_decimal__i14
+   Register : t_decimal__i13
+   Register : t_decimal__i12
+   Register : t_decimal__i11
+   Register : t_decimal__i10
+   Register : clk_500ms_cnt_1974__i14
+   Register : clk_500ms_cnt_1974__i13
+   Register : clk_500ms_cnt_1974__i12
+   Register : clk_500ms_cnt_1974__i11
+   Register : data_reg__i2
+   Register : data_reg__i3
+   Register : data_reg__i4
+   Register : data_reg__i5
+
+                                    Page 7
+
+
+
+
+Design:  main                                          Date:  12/08/22  20:56:27
+
+GSR Usage (cont)
+----------------
+   Register : data_reg__i6
+   Register : data_reg__i7
+   Register : data_reg__i8
+   Register : data_reg__i9
+   Register : data_reg__i10
+   Register : data_reg__i11
+   Register : data_reg__i12
+   Register : data_reg__i13
+   Register : data_reg__i14
+   Register : data_reg__i15
+   Register : clk_20ms_cnt_1972__i1
+   Register : clk_20ms_cnt_1972__i2
+   Register : clk_20ms_cnt_1972__i3
+   Register : clk_20ms_cnt_1972__i4
+   Register : clk_20ms_cnt_1972__i5
+   Register : clk_20ms_cnt_1972__i6
+   Register : clk_20ms_cnt_1972__i7
+   Register : clk_20ms_cnt_1972__i8
+   Register : clk_20ms_cnt_1972__i9
+   Register : clk_20ms_cnt_1972__i10
+   Register : clk_20ms_cnt_1972__i11
+   Register : clk_20ms_cnt_1972__i12
+   Register : clk_20ms_cnt_1972__i13
+   Register : clk_20ms_cnt_1972__i14
+   Register : clk_20ms_cnt_1972__i15
+   Register : clk_20ms_cnt_1972__i16
+   Register : clk_20ms_cnt_1972__i17
+   Register : clk_20ms_cnt_1972__i18
+   Register : clk_20ms_cnt_1972__i19
+   Register : clk_20ms_cnt_1972__i20
+   Register : clk_20ms_cnt_1972__i21
+   Register : clk_20ms_cnt_1972__i22
+   Register : clk_20ms_cnt_1972__i23
+   Register : clk_20ms_cnt_1972__i24
+   Register : clk_20ms_cnt_1972__i25
+   Register : clk_20ms_cnt_1972__i26
+   Register : clk_20ms_cnt_1972__i27
+   Register : clk_20ms_cnt_1972__i28
+   Register : clk_20ms_cnt_1972__i29
+   Register : clk_20ms_cnt_1972__i30
+   Register : clk_20ms_cnt_1972__i31
+   Register : clk_500ms_cnt_1974__i10
+   Register : clk_500ms_cnt_1974__i9
+   Register : clk_500ms_cnt_1974__i8
+   Register : clk_500ms_cnt_1974__i7
+   Register : clk_500ms_cnt_1974__i6
+   Register : clk_500ms_cnt_1974__i5
+   Register : clk_500ms_cnt_1974__i4
+   Register : clk_500ms_cnt_1974__i3
+   Register : clk_500ms_cnt_1974__i2
+   Register : clk_500ms_cnt_1974__i1
+   Register : t_decimal__i20
+   Register : t_decimal__i21
+   Register : data_wr_i0_i3
+   Register : data_wr_i0_i6
+   Register : data_wr_i0_i7
+
+                                    Page 8
+
+
+
+
+Design:  main                                          Date:  12/08/22  20:56:27
+
+GSR Usage (cont)
+----------------
+   Register : clk_1us_cnt_1975__i0
+   Register : clk_100us_cnt_1973__i0
+   Register : write_cnt_1976__i0
+   Register : clk_500ms_cnt_1974__i0
+   Register : temperature_buffer_i0_i0
+   Register : num_delay_i0_i1
+   Register : num_delay_i0_i2
+   Register : num_delay_i0_i3
+   Register : num_delay_i0_i4
+   Register : num_delay_i0_i5
+   Register : clk_20ms_cnt_1972__i0
+   Register : data_wr_buffer_i0_i1
+   Register : data_wr_buffer_i0_i2
+   Register : clk_20ms_748
+   Register : data_wr_buffer_i0_i3
+   Register : data_wr_buffer_i0_i6
+   Register : data_wr_buffer_i0_i7
+   Register : temperature_buffer_i0_i1
+   Register : temperature_buffer_i0_i2
+   Register : temperature_buffer_i0_i3
+   Register : temperature_buffer_i0_i4
+   Register : temperature_buffer_i0_i5
+   Register : select_segment_i2_1977__i1
+   Register : select_segment_i2_1977__i2
+   Register : clk_100us_cnt_1973__i1
+   Register : clk_100us_cnt_1973__i2
+   Register : clk_100us_cnt_1973__i3
+   Register : clk_100us_cnt_1973__i4
+   Register : clk_100us_cnt_1973__i5
+   Register : clk_100us_cnt_1973__i6
+   Register : clk_100us_cnt_1973__i7
+   Register : clk_100us_cnt_1973__i8
+   Register : clk_100us_cnt_1973__i9
+   Register : clk_100us_cnt_1973__i10
+   Register : clk_100us_cnt_1973__i11
+   Register : clk_100us_cnt_1973__i12
+   Register : clk_100us_cnt_1973__i13
+   Register : clk_100us_cnt_1973__i14
+   Register : clk_100us_cnt_1973__i15
+   Register : clk_100us_cnt_1973__i16
+   Register : clk_100us_cnt_1973__i17
+   Register : clk_100us_cnt_1973__i18
+   Register : clk_100us_cnt_1973__i19
+   Register : clk_100us_cnt_1973__i20
+   Register : clk_100us_cnt_1973__i21
+   Register : clk_100us_cnt_1973__i22
+   Register : clk_100us_cnt_1973__i23
+   Register : clk_100us_cnt_1973__i24
+   Register : clk_100us_cnt_1973__i25
+   Register : clk_100us_cnt_1973__i26
+   Register : clk_100us_cnt_1973__i27
+   Register : clk_100us_cnt_1973__i28
+   Register : clk_100us_cnt_1973__i29
+   Register : clk_100us_cnt_1973__i30
+   Register : clk_100us_cnt_1973__i31
+   Register : clk_1us_cnt_1975__i1
+
+                                    Page 9
+
+
+
+
+Design:  main                                          Date:  12/08/22  20:56:27
+
+GSR Usage (cont)
+----------------
+   Register : clk_1us_cnt_1975__i2
+   Register : clk_1us_cnt_1975__i3
+   Register : clk_1us_cnt_1975__i4
+   Register : clk_1us_cnt_1975__i5
+   Register : clk_1us_cnt_1975__i6
+   Register : clk_1us_cnt_1975__i7
+   Register : clk_1us_cnt_1975__i8
+   Register : clk_1us_cnt_1975__i9
+   Register : clk_1us_cnt_1975__i10
+   Register : clk_1us_cnt_1975__i11
+   Register : clk_1us_cnt_1975__i12
+   Register : clk_1us_cnt_1975__i13
+   Register : clk_1us_cnt_1975__i14
+   Register : clk_1us_cnt_1975__i15
+   Register : clk_1us_cnt_1975__i16
+   Register : clk_1us_cnt_1975__i17
+   Register : clk_1us_cnt_1975__i18
+   Register : clk_1us_cnt_1975__i19
+   Register : clk_1us_cnt_1975__i20
+   Register : clk_1us_cnt_1975__i21
+   Register : clk_1us_cnt_1975__i22
+   Register : clk_1us_cnt_1975__i23
+   Register : clk_1us_cnt_1975__i24
+   Register : clk_1us_cnt_1975__i25
+   Register : clk_1us_cnt_1975__i26
+   Register : clk_1us_cnt_1975__i27
+   Register : clk_1us_cnt_1975__i28
+   Register : clk_1us_cnt_1975__i29
+   Register : clk_1us_cnt_1975__i30
+   Register : clk_1us_cnt_1975__i31
+   Register : mode_756
+   Register : temperature_buffer_i0_i6
+   Register : temperature_buffer_i0_i7
+
+     Components with synchronous local reset also reset by asynchronous GSR
+----------------------------------------------------------------------
+
+     These components have the GSR property set to ENABLED and the local reset
+     is synchronous. The components will respond to the synchronous local reset
+     and to the unrelated asynchronous reset signal 'key3_c' via the GSR
+     component.
+
+     Type and number of components of the type: 
+   Register = 4 
+
+     Type and instance name of component: 
+   Register : state_write_i0_i3
+   Register : state_write_i0_i2
+   Register : state_write_i0_i1
+   Register : state_write_i0_i0
+
+Run Time and Memory Usage
+-------------------------
+
+   Total CPU Time: 2 secs  
+   Total REAL Time: 4 secs  
+
+                                   Page 10
+
+
+
+
+Design:  main                                          Date:  12/08/22  20:56:27
+
+Run Time and Memory Usage (cont)
+--------------------------------
+   Peak Memory Usage: 55 MB
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   Page 11
+
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+     Copyright (c) 1995 AT&T Corp.   All rights reserved.
+     Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+     Copyright (c) 2001 Agere Systems   All rights reserved.
+     Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights
+     reserved.

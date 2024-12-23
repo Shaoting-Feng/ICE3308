@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliMessageLog>
+    <Task name="Lattice_Synthesis">
+        <Message>
+            <ID>35002000</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35001781</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35921504</ID>
+            <Severity>Info</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>C:/VHDL/lab/lab6/impl1</Dynamic>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/vhdl/lab/lab6/project6.vhd(8): </Dynamic>
+            <Dynamic>main</Dynamic>
+            <Navigation>c:/vhdl/lab/lab6/project6.vhd</Navigation>
+            <Navigation>8</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/vhdl/lab/lab6/project6.vhd(24): </Dynamic>
+            <Dynamic>main_lab6</Dynamic>
+            <Navigation>c:/vhdl/lab/lab6/project6.vhd</Navigation>
+            <Navigation>24</Navigation>
+        </Message>
+        <Message>
+            <ID>35921251</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/vhdl/lab/lab6/project6.vhd(171): </Dynamic>
+            <Dynamic>key3</Dynamic>
+            <Navigation>c:/vhdl/lab/lab6/project6.vhd</Navigation>
+            <Navigation>171</Navigation>
+        </Message>
+        <Message>
+            <ID>35921613</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/vhdl/lab/lab6/project6.vhd(175): </Dynamic>
+            <Navigation>c:/vhdl/lab/lab6/project6.vhd</Navigation>
+            <Navigation>175</Navigation>
+        </Message>
+        <Message>
+            <ID>35921251</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/vhdl/lab/lab6/project6.vhd(278): </Dynamic>
+            <Dynamic>mode</Dynamic>
+            <Navigation>c:/vhdl/lab/lab6/project6.vhd</Navigation>
+            <Navigation>278</Navigation>
+        </Message>
+        <Message>
+            <ID>35921613</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/vhdl/lab/lab6/project6.vhd(281): </Dynamic>
+            <Navigation>c:/vhdl/lab/lab6/project6.vhd</Navigation>
+            <Navigation>281</Navigation>
+        </Message>
+        <Message>
+            <ID>35921251</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/vhdl/lab/lab6/project6.vhd(286): </Dynamic>
+            <Dynamic>reset</Dynamic>
+            <Navigation>c:/vhdl/lab/lab6/project6.vhd</Navigation>
+            <Navigation>286</Navigation>
+        </Message>
+        <Message>
+            <ID>35921172</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/vhdl/lab/lab6/project6.vhd(494): </Dynamic>
+            <Navigation>c:/vhdl/lab/lab6/project6.vhd</Navigation>
+            <Navigation>494</Navigation>
+        </Message>
+        <Message>
+            <ID>35921613</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/vhdl/lab/lab6/project6.vhd(497): </Dynamic>
+            <Navigation>c:/vhdl/lab/lab6/project6.vhd</Navigation>
+            <Navigation>497</Navigation>
+        </Message>
+        <Message>
+            <ID>35921205</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/vhdl/lab/lab6/project6.vhd(21): </Dynamic>
+            <Dynamic>main</Dynamic>
+            <Dynamic>main_lab6</Dynamic>
+            <Navigation>c:/vhdl/lab/lab6/project6.vhd</Navigation>
+            <Navigation>21</Navigation>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>0</Dynamic>
+            <Dynamic>t_decimal</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>1</Dynamic>
+            <Dynamic>t_decimal</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>2</Dynamic>
+            <Dynamic>t_decimal</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>3</Dynamic>
+            <Dynamic>t_decimal</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>4</Dynamic>
+            <Dynamic>t_decimal</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>5</Dynamic>
+            <Dynamic>t_decimal</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>6</Dynamic>
+            <Dynamic>t_decimal</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>7</Dynamic>
+            <Dynamic>t_decimal</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>8</Dynamic>
+            <Dynamic>t_decimal</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>9</Dynamic>
+            <Dynamic>t_decimal</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>10</Dynamic>
+            <Dynamic>t_decimal</Dynamic>
+        </Message>
+        <Message>
+            <ID>35935013</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/vhdl/lab/lab6/project6.vhd(272): </Dynamic>
+            <Dynamic>pm_i4</Dynamic>
+            <Navigation>c:/vhdl/lab/lab6/project6.vhd</Navigation>
+            <Navigation>272</Navigation>
+        </Message>
+        <Message>
+            <ID>35935014</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/vhdl/lab/lab6/project6.vhd(272): </Dynamic>
+            <Dynamic>pm_i2</Dynamic>
+            <Navigation>c:/vhdl/lab/lab6/project6.vhd</Navigation>
+            <Navigation>272</Navigation>
+        </Message>
+        <Message>
+            <ID>35935013</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/vhdl/lab/lab6/project6.vhd(496): </Dynamic>
+            <Dynamic>num_delay_i0_i26</Dynamic>
+            <Navigation>c:/vhdl/lab/lab6/project6.vhd</Navigation>
+            <Navigation>496</Navigation>
+        </Message>
+        <Message>
+            <ID>35001611</ID>
+            <Severity>Warning</Severity>
+        </Message>
+    </Task>
+    <Task name="PAR">
+        <Message>
+            <ID>61061008</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>clock_c</Dynamic>
+            <Dynamic>Primary</Dynamic>
+            <Dynamic>clock</Dynamic>
+            <Dynamic>C1</Dynamic>
+            <Dynamic>Primary</Dynamic>
+        </Message>
+        <Message>
+            <ID>66011008</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>
+   Signal=clk_100us loads=8 clock_loads=4
+   Signal=clk_1us loads=13 clock_loads=2
+   Signal=clock_c_derived_1 loads=4 clock_loads=1
+   Signal=clk_20ms loads=7 clock_loads=1</Dynamic>
+        </Message>
+        <Message>
+            <ID>66011008</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>
+   Signal=clk_100us loads=8 clock_loads=4
+   Signal=clk_1us loads=13 clock_loads=2
+   Signal=clock_c_derived_1 loads=4 clock_loads=1
+   Signal=clk_20ms loads=7 clock_loads=1</Dynamic>
+        </Message>
+    </Task>
+</BaliMessageLog>

@@ -1,0 +1,847 @@
+
+synthesis -f "project6_impl1_lattice.synproj"
+synthesis:  version Diamond (64-bit) 3.12.0.240.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
+Thu Dec 08 20:55:09 2022
+
+
+Command Line:  synthesis -f project6_impl1_lattice.synproj -gui -msgset C:/VHDL/lab/lab6/promote.xml 
+
+    <postMsg mid="35002000" type="Info"    dynamic="0" navigation="0"  />
+Synthesis options:
+The -a option is MachXO2.
+The -s option is 4.
+The -t option is CSBGA132.
+The -d option is LCMXO2-4000HC.
+Using package CSBGA132.
+Using performance grade 4.
+                                                          
+
+##########################################################
+
+### Lattice Family : MachXO2
+
+### Device  : LCMXO2-4000HC
+
+### Package : CSBGA132
+
+### Speed   : 4
+
+##########################################################
+
+                                                          
+
+    <postMsg mid="35001781" type="Info"    dynamic="0" navigation="0"  />
+Optimization goal = Balanced
+Top-level module name = main.
+Target frequency = 200.000000 MHz.
+Maximum fanout = 1000.
+Timing path count = 3
+BRAM utilization = 100.000000 %
+DSP usage = true
+DSP utilization = 100.000000 %
+fsm_encoding_style = auto
+resolve_mixed_drivers = 0
+fix_gated_clocks = 1
+
+Mux style = Auto
+Use Carry Chain = true
+carry_chain_length = 0
+Loop Limit = 1950.
+Use IO Insertion = TRUE
+Use IO Reg = AUTO
+
+Resource Sharing = TRUE
+Propagate Constants = TRUE
+Remove Duplicate Registers = TRUE
+force_gsr = auto
+ROM style = auto
+RAM style = auto
+The -comp option is FALSE.
+The -syn option is FALSE.
+-p C:/lscc/diamond/3.12/ispfpga/xo2c00/data (searchpath added)
+-p C:/VHDL/lab/lab6/impl1 (searchpath added)
+-p C:/VHDL/lab/lab6 (searchpath added)
+VHDL library = work
+VHDL design file = C:/VHDL/lab/lab6/project6.vhd
+NGD file = project6_impl1.ngd
+-sdc option: SDC file input not used.
+-lpf option: Output file option is ON.
+Hardtimer checking is enabled (default). The -dt option is not used.
+The -r option is OFF. [ Remove LOC Properties is OFF. ]
+Technology check ok...
+
+Analyzing Verilog file C:/lscc/diamond/3.12/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
+Compile design.
+Compile Design Begin
+    <postMsg mid="35921504" type="Info"    dynamic="2" navigation="0" arg0="" arg1="C:/VHDL/lab/lab6/impl1"  />
+Analyzing VHDL file c:/vhdl/lab/lab6/project6.vhd. VHDL-1481
+    <postMsg mid="35921012" type="Info"    dynamic="2" navigation="2" arg0="c:/vhdl/lab/lab6/project6.vhd(8): " arg1="main" arg2="c:/vhdl/lab/lab6/project6.vhd" arg3="8"  />
+    <postMsg mid="35921010" type="Info"    dynamic="2" navigation="2" arg0="c:/vhdl/lab/lab6/project6.vhd(24): " arg1="main_lab6" arg2="c:/vhdl/lab/lab6/project6.vhd" arg3="24"  />
+unit main is not yet analyzed. VHDL-1485
+unit main is not yet analyzed. VHDL-1485
+c:/vhdl/lab/lab6/project6.vhd(8): executing main(main_lab6)
+
+    <postMsg mid="35921251" type="Warning" dynamic="2" navigation="2" arg0="c:/vhdl/lab/lab6/project6.vhd(171): " arg1="key3" arg2="c:/vhdl/lab/lab6/project6.vhd" arg3="171"  />
+    <postMsg mid="35921613" type="Warning" dynamic="1" navigation="2" arg0="c:/vhdl/lab/lab6/project6.vhd(175): " arg1="c:/vhdl/lab/lab6/project6.vhd" arg2="175"  />
+    <postMsg mid="35921251" type="Warning" dynamic="2" navigation="2" arg0="c:/vhdl/lab/lab6/project6.vhd(278): " arg1="mode" arg2="c:/vhdl/lab/lab6/project6.vhd" arg3="278"  />
+    <postMsg mid="35921613" type="Warning" dynamic="1" navigation="2" arg0="c:/vhdl/lab/lab6/project6.vhd(281): " arg1="c:/vhdl/lab/lab6/project6.vhd" arg2="281"  />
+    <postMsg mid="35921251" type="Warning" dynamic="2" navigation="2" arg0="c:/vhdl/lab/lab6/project6.vhd(286): " arg1="reset" arg2="c:/vhdl/lab/lab6/project6.vhd" arg3="286"  />
+    <postMsg mid="35921172" type="Info"    dynamic="1" navigation="2" arg0="c:/vhdl/lab/lab6/project6.vhd(494): " arg1="c:/vhdl/lab/lab6/project6.vhd" arg2="494"  />
+    <postMsg mid="35921613" type="Warning" dynamic="1" navigation="2" arg0="c:/vhdl/lab/lab6/project6.vhd(497): " arg1="c:/vhdl/lab/lab6/project6.vhd" arg2="497"  />
+    <postMsg mid="35921205" type="Warning" dynamic="3" navigation="2" arg0="c:/vhdl/lab/lab6/project6.vhd(21): " arg1="main" arg2="main_lab6" arg3="c:/vhdl/lab/lab6/project6.vhd" arg4="21"  />
+Top module name (VHDL): main
+Last elaborated design is main(main_lab6)
+Loading NGL library 'C:/lscc/diamond/3.12/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.12/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.12/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.12/ispfpga/or5g00/data/orc5glib.ngl'...
+Loading device for application map from file 'xo2c4000.nph' in environment: C:/lscc/diamond/3.12/ispfpga.
+Package Status:                     Final          Version 1.44.
+Top-level module name = main.
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="0" arg1="t_decimal"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="1" arg1="t_decimal"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="2" arg1="t_decimal"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="3" arg1="t_decimal"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="4" arg1="t_decimal"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="5" arg1="t_decimal"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="6" arg1="t_decimal"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="7" arg1="t_decimal"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="8" arg1="t_decimal"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="9" arg1="t_decimal"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="10" arg1="t_decimal"  />
+    <postMsg mid="35935013" type="Warning" dynamic="2" navigation="2" arg0="c:/vhdl/lab/lab6/project6.vhd(272): " arg1="pm_i4" arg2="c:/vhdl/lab/lab6/project6.vhd" arg3="272"  />
+
+
+
+    <postMsg mid="35935014" type="Warning" dynamic="2" navigation="2" arg0="c:/vhdl/lab/lab6/project6.vhd(272): " arg1="pm_i2" arg2="c:/vhdl/lab/lab6/project6.vhd" arg3="272"  />
+    <postMsg mid="35935013" type="Warning" dynamic="2" navigation="2" arg0="c:/vhdl/lab/lab6/project6.vhd(496): " arg1="num_delay_i0_i26" arg2="c:/vhdl/lab/lab6/project6.vhd" arg3="496"  />
+GSR instance connected to net key3_c.
+Duplicate register/latch removal. t_binary_i0_i0 is a one-to-one match with t_binary_rep_78__i0.
+Duplicate register/latch removal. data_wr_i0_i4 is a one-to-one match with data_wr_i0_i1.
+Duplicate register/latch removal. t_binary_i0_i1 is a one-to-one match with t_binary_rep_78__i1.
+Duplicate register/latch removal. t_binary_i0_i2 is a one-to-one match with t_binary_rep_78__i2.
+Duplicate register/latch removal. t_binary_i0_i3 is a one-to-one match with t_binary_rep_78__i3.
+Duplicate register/latch removal. t_binary_i0_i4 is a one-to-one match with t_binary_rep_78__i4.
+Duplicate register/latch removal. t_binary_i0_i5 is a one-to-one match with t_binary_rep_78__i5.
+Duplicate register/latch removal. t_binary_i0_i6 is a one-to-one match with t_binary_rep_78__i6.
+Duplicate register/latch removal. t_binary_i0_i7 is a one-to-one match with t_binary_rep_78__i7.
+Duplicate register/latch removal. t_binary_i0_i8 is a one-to-one match with t_binary_rep_78__i8.
+Duplicate register/latch removal. t_binary_i0_i9 is a one-to-one match with t_binary_rep_78__i9.
+Duplicate register/latch removal. t_binary_i0_i10 is a one-to-one match with t_binary_rep_78__i10.
+Duplicate register/latch removal. t_binary_i0_i11 is a one-to-one match with t_binary_rep_78__i11.
+Duplicate register/latch removal. t_binary_i0_i12 is a one-to-one match with t_binary_rep_78__i12.
+Duplicate register/latch removal. t_binary_i0_i13 is a one-to-one match with t_binary_rep_78__i13.
+Duplicate register/latch removal. t_binary_i0_i14 is a one-to-one match with t_binary_rep_78__i14.
+Duplicate register/latch removal. t_binary_i0_i15 is a one-to-one match with t_binary_rep_78__i15.
+Duplicate register/latch removal. data_wr_buffer_i0_i1 is a one-to-one match with data_wr_buffer_i0_i4.
+Duplicate register/latch removal. data_wr_i0_i4 is a one-to-one match with data_wr_i0_i5.
+Duplicate register/latch removal. data_wr_buffer_i0_i1 is a one-to-one match with data_wr_buffer_i0_i5.
+Applying 200.000000 MHz constraint to all clocks
+
+    <postMsg mid="35001611" type="Warning" dynamic="0" navigation="0"  />
+Results of NGD DRC are available in main_drc.log.
+Loading NGL library 'C:/lscc/diamond/3.12/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.12/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.12/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.12/ispfpga/or5g00/data/orc5glib.ngl'...
+
+
+Running DRC...
+
+DRC complete with no errors or warnings
+
+Design Results:
+   1343 blocks expanded
+completed the first expansion
+All blocks are expanded and NGD expansion is successful.
+Writing NGD file project6_impl1.ngd.
+
+################### Begin Area Report (main)######################
+Number of register bits => 318 of 4635 (6 % )
+BB => 1
+CCU2D => 158
+FD1P3AX => 161
+FD1P3IX => 49
+FD1S3AX => 10
+FD1S3IX => 97
+FD1S3JX => 1
+GSR => 1
+IB => 4
+L6MUX21 => 5
+LUT4 => 788
+OB => 9
+PFUMX => 56
+################### End Area Report ##################
+
+################### Begin BlackBox Report ######################
+TSALL => 1
+################### End BlackBox Report ##################
+
+################### Begin Clock Report ######################
+Clock Nets
+Number of Clocks: 5
+  Net : clock_c, loads : 309
+  Net : clk_1us, loads : 13
+  Net : clk_100us, loads : 9
+  Net : clk_20ms, loads : 7
+  Net : clock_c_derived_1, loads : 4
+Clock Enable Nets
+Number of Clock Enables: 40
+Top 10 highest fanout Clock Enables:
+  Net : clock_c_enable_180, loads : 41
+  Net : clock_c_enable_113, loads : 32
+  Net : clock_c_enable_186, loads : 32
+  Net : clock_c_enable_143, loads : 22
+  Net : clock_c_enable_161, loads : 20
+  Net : clock_c_enable_120, loads : 8
+  Net : clock_c_enable_128, loads : 8
+  Net : clock_c_enable_185, loads : 5
+  Net : clock_c_enable_197, loads : 5
+  Net : clock_c_enable_183, loads : 5
+Highest fanout non-clock nets
+Top 10 highest fanout non-clock nets:
+  Net : STATE_2, loads : 146
+  Net : STATE_1, loads : 134
+  Net : STATE_0, loads : 60
+  Net : led1_c_1, loads : 43
+  Net : n11520, loads : 43
+  Net : clock_c_enable_180, loads : 41
+  Net : n2070, loads : 35
+  Net : n28407, loads : 33
+  Net : n28391, loads : 33
+  Net : n11534, loads : 32
+################### End Clock Report ##################
+
+Timing Report Summary
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk4 [get_nets clk_20ms]                |            -|            -|     0  
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk3 [get_nets clock_c_derived_1]       |            -|            -|     0  
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk2 [get_nets clk_1us]                 |            -|            -|     0  
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk1 [get_nets clk_100us]               |  200.000 MHz|  242.072 MHz|     2  
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk0 [get_nets clock_c]                 |  200.000 MHz|   16.102 MHz|    34 *
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+1 constraints not met.
+
+
+Peak Memory Usage: 218.129  MB
+
+--------------------------------------------------------------
+Elapsed CPU time for LSE flow : 22.516  secs
+--------------------------------------------------------------
+
+map -a "MachXO2" -p LCMXO2-4000HC -t CSBGA132 -s 4 -oc Commercial   "project6_impl1.ngd" -o "project6_impl1_map.ncd" -pr "project6_impl1.prf" -mp "project6_impl1.mrp" -lpf "C:/VHDL/lab/lab6/impl1/project6_impl1.lpf" -lpf "C:/VHDL/lab/lab6/project6.lpf"  -c 0           
+map:  version Diamond (64-bit) 3.12.0.240.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
+   Process the file: project6_impl1.ngd
+   Picdevice="LCMXO2-4000HC"
+
+   Pictype="CSBGA132"
+
+   Picspeed=4
+
+   Remove unused logic
+
+   Do not produce over sized NCDs.
+
+Part used: LCMXO2-4000HCCSBGA132, Performance used: 4.
+
+Loading device for application map from file 'xo2c4000.nph' in environment: C:/lscc/diamond/3.12/ispfpga.
+Package Status:                     Final          Version 1.44.
+
+Running general design DRC...
+
+Removing unused logic...
+
+Optimizing...
+
+
+
+
+Design Summary:
+   Number of registers:    318 out of  4635 (7%)
+      PFU registers:          318 out of  4320 (7%)
+      PIO registers:            0 out of   315 (0%)
+   Number of SLICEs:       553 out of  2160 (26%)
+      SLICEs as Logic/ROM:    553 out of  2160 (26%)
+      SLICEs as RAM:            0 out of  1620 (0%)
+      SLICEs as Carry:        158 out of  2160 (7%)
+   Number of LUT4s:        1102 out of  4320 (26%)
+      Number used as logic LUTs:        786
+      Number used as distributed RAM:     0
+      Number used as ripple logic:      316
+      Number used as shift registers:     0
+   Number of PIO sites used: 14 + 4(JTAG) out of 105 (17%)
+   Number of block RAMs:  0 out of 10 (0%)
+   Number of GSRs:        1 out of 1 (100%)
+   EFB used :        No
+   JTAG used :       No
+   Readback used :   No
+   Oscillator used : No
+   Startup used :    No
+   POR :             On
+   Bandgap :         On
+   Number of Power Controller:  0 out of 1 (0%)
+   Number of Dynamic Bank Controller (BCINRD):  0 out of 6 (0%)
+   Number of Dynamic Bank Controller (BCLVDSO):  0 out of 1 (0%)
+   Number of DCCA:  0 out of 8 (0%)
+   Number of DCMA:  0 out of 2 (0%)
+   Number of PLLs:  0 out of 2 (0%)
+   Number of DQSDLLs:  0 out of 2 (0%)
+   Number of CLKDIVC:  0 out of 4 (0%)
+   Number of ECLKSYNCA:  0 out of 4 (0%)
+   Number of ECLKBRIDGECS:  0 out of 2 (0%)
+   Notes:-
+      1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of distributed RAMs) + 2*(Number of ripple logic)
+      2. Number of logic LUT4s does not include count of distributed RAM and ripple logic.
+   Number of clocks:  5
+     Net clock_c: 191 loads, 191 rising, 0 falling (Driver: PIO clock )
+     Net clk_100us: 4 loads, 4 rising, 0 falling (Driver: clk_100us_750 )
+     Net clk_1us: 2 loads, 2 rising, 0 falling (Driver: clk_1us_755 )
+     Net clock_c_derived_1: 1 loads, 1 rising, 0 falling (Driver: clk_500ms_753 )
+     Net clk_20ms: 1 loads, 1 rising, 0 falling (Driver: clk_20ms_748 )
+   Number of Clock Enables:  40
+     Net clock_c_enable_180: 23 loads, 23 LSLICEs
+     Net tMeasure_DQ_N_1482: 1 loads, 1 LSLICEs
+     Net clock_c_enable_9: 1 loads, 1 LSLICEs
+     Net clock_c_enable_10: 1 loads, 1 LSLICEs
+     Net clock_c_enable_178: 2 loads, 2 LSLICEs
+     Net clock_c_enable_113: 16 loads, 16 LSLICEs
+     Net clock_c_enable_120: 4 loads, 4 LSLICEs
+     Net clock_c_enable_143: 16 loads, 16 LSLICEs
+     Net clock_c_enable_17: 1 loads, 1 LSLICEs
+     Net clock_c_enable_18: 1 loads, 1 LSLICEs
+     Net clock_c_enable_161: 12 loads, 12 LSLICEs
+     Net clock_c_enable_24: 1 loads, 1 LSLICEs
+     Net clock_c_enable_26: 1 loads, 1 LSLICEs
+     Net clock_c_enable_27: 1 loads, 1 LSLICEs
+     Net clock_c_enable_185: 3 loads, 3 LSLICEs
+     Net clock_c_enable_186: 17 loads, 17 LSLICEs
+     Net clock_c_enable_183: 3 loads, 3 LSLICEs
+     Net key2_c: 1 loads, 1 LSLICEs
+     Net clock_c_enable_184: 3 loads, 3 LSLICEs
+     Net clock_c_enable_208: 2 loads, 2 LSLICEs
+     Net clock_c_enable_206: 2 loads, 2 LSLICEs
+     Net clock_c_enable_128: 4 loads, 4 LSLICEs
+     Net clock_c_enable_172: 1 loads, 1 LSLICEs
+     Net clock_c_enable_173: 1 loads, 1 LSLICEs
+     Net clock_c_enable_207: 2 loads, 2 LSLICEs
+     Net clock_c_enable_187: 1 loads, 1 LSLICEs
+     Net clock_c_enable_188: 1 loads, 1 LSLICEs
+     Net clock_c_enable_189: 1 loads, 1 LSLICEs
+     Net clock_c_enable_190: 1 loads, 1 LSLICEs
+     Net clock_c_enable_191: 1 loads, 1 LSLICEs
+     Net clock_c_enable_192: 1 loads, 1 LSLICEs
+     Net clock_c_enable_197: 3 loads, 3 LSLICEs
+     Net clock_c_enable_198: 1 loads, 1 LSLICEs
+     Net clock_c_enable_199: 1 loads, 1 LSLICEs
+     Net clock_c_enable_200: 1 loads, 1 LSLICEs
+     Net clock_c_enable_201: 1 loads, 1 LSLICEs
+     Net clock_c_enable_202: 1 loads, 1 LSLICEs
+     Net clock_c_enable_203: 1 loads, 1 LSLICEs
+     Net clock_c_enable_204: 1 loads, 1 LSLICEs
+     Net clock_c_enable_205: 1 loads, 1 LSLICEs
+   Number of LSRs:  11
+     Net write_cnt_4: 1 loads, 1 LSLICEs
+     Net led1_c_1: 1 loads, 1 LSLICEs
+     Net clock_c_enable_161: 3 loads, 3 LSLICEs
+     Net n11534: 17 loads, 17 LSLICEs
+     Net key1_c: 1 loads, 1 LSLICEs
+     Net n28391: 17 loads, 17 LSLICEs
+     Net n11530: 2 loads, 2 LSLICEs
+     Net n18664: 2 loads, 2 LSLICEs
+     Net n11520: 17 loads, 17 LSLICEs
+     Net n28407: 17 loads, 17 LSLICEs
+     Net n18010: 3 loads, 3 LSLICEs
+   Number of nets driven by tri-state buffers:  0
+   Top 10 highest fanout non-clock nets:
+     Net STATE_2: 146 loads
+     Net STATE_1: 134 loads
+     Net STATE_0: 60 loads
+     Net led1_c_1: 43 loads
+     Net n2070: 35 loads
+     Net select_segment_0: 30 loads
+     Net n11520: 28 loads
+     Net select_segment_1: 26 loads
+     Net clock_c_enable_180: 23 loads
+     Net data_cnt_1: 23 loads
+ 
+
+   Number of warnings:  0
+   Number of errors:    0
+
+
+
+Total CPU Time: 2 secs  
+Total REAL Time: 4 secs  
+Peak Memory Usage: 55 MB
+
+Dumping design to file project6_impl1_map.ncd.
+
+ncd2vdb "project6_impl1_map.ncd" ".vdbs/project6_impl1_map.vdb"
+
+Loading device for application ncd2vdb from file 'xo2c4000.nph' in environment: C:/lscc/diamond/3.12/ispfpga.
+
+mpartrce -p "project6_impl1.p2t" -f "project6_impl1.p3t" -tf "project6_impl1.pt" "project6_impl1_map.ncd" "project6_impl1.ncd"
+
+---- MParTrce Tool ----
+Removing old design directory at request of -rem command line option to this program.
+Running par. Please wait . . .
+
+Lattice Place and Route Report for Design "project6_impl1_map.ncd"
+Thu Dec 08 20:56:33 2022
+
+PAR: Place And Route Diamond (64-bit) 3.12.0.240.2.
+Command Line: par -w -l 5 -i 6 -t 1 -c 0 -e 0 -gui -msgset C:/VHDL/lab/lab6/promote.xml -exp parUseNBR=1:parCDP=0:parCDR=0:parPathBased=OFF:parASE=1 project6_impl1_map.ncd project6_impl1.dir/5_1.ncd project6_impl1.prf
+Preference file: project6_impl1.prf.
+Placement level-cost: 5-1.
+Routing Iterations: 6
+
+Loading design for application par from file project6_impl1_map.ncd.
+Design name: main
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: 4
+Loading device for application par from file 'xo2c4000.nph' in environment: C:/lscc/diamond/3.12/ispfpga.
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+License checked out.
+
+
+Ignore Preference Error(s):  True
+Device utilization summary:
+
+   PIO (prelim)   14+4(JTAG)/280     6% used
+                  14+4(JTAG)/105     17% bonded
+
+   SLICE            553/2160         25% used
+
+   GSR                1/1           100% used
+
+
+Number of Signals: 1466
+Number of Connections: 4242
+
+Pin Constraint Summary:
+   14 out of 14 pins locked (100% locked).
+
+The following 1 signal is selected to use the primary clock routing resources:
+    clock_c (driver: clock, clk load #: 191)
+
+    <postMsg mid="61061008" type="Warning" dynamic="5" navigation="0" arg0="clock_c" arg1="Primary" arg2="clock" arg3="C1" arg4="Primary"  />
+
+The following 8 signals are selected to use the secondary clock routing resources:
+    clock_c_enable_180 (driver: SLICE_167, clk load #: 0, sr load #: 0, ce load #: 23)
+    clock_c_enable_186 (driver: SLICE_491, clk load #: 0, sr load #: 0, ce load #: 17)
+    n11534 (driver: SLICE_533, clk load #: 0, sr load #: 17, ce load #: 0)
+    n28391 (driver: SLICE_492, clk load #: 0, sr load #: 17, ce load #: 0)
+    n11520 (driver: SLICE_370, clk load #: 0, sr load #: 17, ce load #: 0)
+    n28407 (driver: SLICE_501, clk load #: 0, sr load #: 17, ce load #: 0)
+    clock_c_enable_113 (driver: SLICE_469, clk load #: 0, sr load #: 0, ce load #: 16)
+    clock_c_enable_143 (driver: SLICE_371, clk load #: 0, sr load #: 0, ce load #: 16)
+
+Signal key3_c is selected as Global Set/Reset.
+Starting Placer Phase 0.
+............
+Finished Placer Phase 0.  REAL time: 16 secs 
+
+Starting Placer Phase 1.
+......................
+Placer score = 179818.
+Finished Placer Phase 1.  REAL time: 39 secs 
+
+Starting Placer Phase 2.
+.
+Placer score =  175520
+Finished Placer Phase 2.  REAL time: 40 secs 
+
+
+------------------ Clock Report ------------------
+
+Global Clock Resources:
+  CLK_PIN    : 0 out of 8 (0%)
+  General PIO: 1 out of 280 (0%)
+  PLL        : 0 out of 2 (0%)
+  DCM        : 0 out of 2 (0%)
+  DCC        : 0 out of 8 (0%)
+
+Global Clocks:
+  PRIMARY "clock_c" from comp "clock" on PIO site "C1 (PL4A)", clk load = 191
+  SECONDARY "clock_c_enable_180" from F1 on comp "SLICE_167" on site "R12C15A", clk load = 0, ce load = 23, sr load = 0
+  SECONDARY "clock_c_enable_186" from F1 on comp "SLICE_491" on site "R13C31A", clk load = 0, ce load = 17, sr load = 0
+  SECONDARY "n11534" from F0 on comp "SLICE_533" on site "R12C15C", clk load = 0, ce load = 0, sr load = 17
+  SECONDARY "n28391" from F1 on comp "SLICE_492" on site "R13C31D", clk load = 0, ce load = 0, sr load = 17
+  SECONDARY "n11520" from F1 on comp "SLICE_370" on site "R12C17B", clk load = 0, ce load = 0, sr load = 17
+  SECONDARY "n28407" from F0 on comp "SLICE_501" on site "R12C17A", clk load = 0, ce load = 0, sr load = 17
+  SECONDARY "clock_c_enable_113" from F1 on comp "SLICE_469" on site "R12C17D", clk load = 0, ce load = 16, sr load = 0
+  SECONDARY "clock_c_enable_143" from F1 on comp "SLICE_371" on site "R12C17C", clk load = 0, ce load = 16, sr load = 0
+
+  PRIMARY  : 1 out of 8 (12%)
+  SECONDARY: 8 out of 8 (100%)
+
+Edge Clocks:
+  No edge clock selected.
+
+--------------- End of Clock Report ---------------
+
+
+I/O Usage Summary (final):
+   14 + 4(JTAG) out of 280 (6.4%) PIO sites used.
+   14 + 4(JTAG) out of 105 (17.1%) bonded PIO sites used.
+   Number of PIO comps: 14; differential: 0.
+   Number of Vref pins used: 0.
+
+I/O Bank Usage Summary:
++----------+---------------+------------+-----------+
+| I/O Bank | Usage         | Bank Vccio | Bank Vref |
++----------+---------------+------------+-----------+
+| 0        | 0 / 26 (  0%) | -          | -         |
+| 1        | 4 / 26 ( 15%) | 2.5V       | -         |
+| 2        | 5 / 28 ( 17%) | 2.5V       | -         |
+| 3        | 1 / 7 ( 14%)  | 2.5V       | -         |
+| 4        | 3 / 8 ( 37%)  | 2.5V       | -         |
+| 5        | 1 / 10 ( 10%) | 2.5V       | -         |
++----------+---------------+------------+-----------+
+
+Total placer CPU time: 34 secs 
+
+Dumping design to file project6_impl1.dir/5_1.ncd.
+
+0 connections routed; 4242 unrouted.
+Starting router resource preassignment
+
+    <postMsg mid="66011008" type="Warning" dynamic="1" navigation="0" arg0="&#xA;   Signal=clk_100us loads=8 clock_loads=4&#xA;   Signal=clk_1us loads=13 clock_loads=2&#xA;   Signal=clock_c_derived_1 loads=4 clock_loads=1&#xA;   Signal=clk_20ms loads=7 clock_loads=1"  />
+
+Completed router resource preassignment. Real time: 51 secs 
+
+Start NBR router at 20:57:24 12/08/22
+
+*****************************************************************
+Info: NBR allows conflicts(one node used by more than one signal)
+      in the earlier iterations. In each iteration, it tries to  
+      solve the conflicts while keeping the critical connections 
+      routed as short as possible. The routing process is said to
+      be completed when no conflicts exist and all connections   
+      are routed.                                                
+Note: NBR uses a different method to calculate timing slacks. The
+      worst slack and total negative slack may not be the same as
+      that in TRCE report. You should always run TRCE to verify  
+      your design.                                               
+*****************************************************************
+
+Start NBR special constraint process at 20:57:25 12/08/22
+
+Start NBR section for initial routing at 20:57:26 12/08/22
+Level 4, iteration 1
+130(0.05%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 30.816ns/0.000ns; real time: 55 secs 
+
+Info: Initial congestion level at 75% usage is 0
+Info: Initial congestion area  at 75% usage is 0 (0.00%)
+
+Start NBR section for normal routing at 20:57:28 12/08/22
+Level 4, iteration 1
+49(0.02%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 28.844ns/0.000ns; real time: 56 secs 
+Level 4, iteration 2
+11(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 28.850ns/0.000ns; real time: 56 secs 
+Level 4, iteration 3
+5(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 28.850ns/0.000ns; real time: 56 secs 
+Level 4, iteration 4
+0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 28.850ns/0.000ns; real time: 56 secs 
+
+Start NBR section for setup/hold timing optimization with effort level 3 at 20:57:29 12/08/22
+Level 4, iteration 0
+Level 4, iteration 1
+2(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<hold >: 0.047ns/0.000ns; real time: 1 mins 8 secs 
+Level 4, iteration 2
+0(0.00%) conflict; 2(0.05%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack<hold >: 0.047ns/0.000ns; real time: 1 mins 8 secs 
+Level 4, iteration 0
+0(0.00%) conflict; 2(0.05%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 28.830ns/0.000ns; real time: 1 mins 9 secs 
+Level 4, iteration 1
+0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 28.830ns/0.000ns; real time: 1 mins 9 secs 
+
+Start NBR section for re-routing at 20:57:44 12/08/22
+Level 4, iteration 1
+0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 28.850ns/0.000ns; real time: 1 mins 11 secs 
+
+Start NBR section for post-routing at 20:57:44 12/08/22
+
+End NBR router with 0 unrouted connection
+
+NBR Summary
+-----------
+  Number of unrouted connections : 0 (0.00%)
+  Number of connections with timing violations : 0 (0.00%)
+  Estimated worst slack<setup> : 28.850ns
+  Timing score<setup> : 0
+-----------
+Notes: The timing info is calculated for SETUP only and all PAR_ADJs are ignored.
+
+
+
+    <postMsg mid="66011008" type="Warning" dynamic="1" navigation="0" arg0="&#xA;   Signal=clk_100us loads=8 clock_loads=4&#xA;   Signal=clk_1us loads=13 clock_loads=2&#xA;   Signal=clock_c_derived_1 loads=4 clock_loads=1&#xA;   Signal=clk_20ms loads=7 clock_loads=1"  />
+
+Total CPU time 1 mins 3 secs 
+Total REAL time: 1 mins 17 secs 
+Completely routed.
+End of route.  4242 routed (100.00%); 0 unrouted.
+
+Hold time timing score: 0, hold timing errors: 0
+
+Timing score: 0 
+
+Dumping design to file project6_impl1.dir/5_1.ncd.
+
+
+PAR_SUMMARY::Run status = Completed
+PAR_SUMMARY::Number of unrouted conns = 0
+PAR_SUMMARY::Worst  slack<setup/<ns>> = 28.850
+PAR_SUMMARY::Timing score<setup/<ns>> = 0.000
+PAR_SUMMARY::Worst  slack<hold /<ns>> = 0.052
+PAR_SUMMARY::Timing score<hold /<ns>> = 0.000
+PAR_SUMMARY::Number of errors = 0
+
+Total CPU  time to completion: 1 mins 4 secs 
+Total REAL time to completion: 1 mins 18 secs 
+
+par done!
+
+Note: user must run 'Trace' for timing closure signoff.
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
+Exiting par with exit code 0
+Exiting mpartrce with exit code 0
+
+trce -f "project6_impl1.pt" -o "project6_impl1.twr" "project6_impl1.ncd" "project6_impl1.prf"
+trce:  version Diamond (64-bit) 3.12.0.240.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
+
+Loading design for application trce from file project6_impl1.ncd.
+Design name: main
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: 4
+Loading device for application trce from file 'xo2c4000.nph' in environment: C:/lscc/diamond/3.12/ispfpga.
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+Setup and Hold Report
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.12.0.240.2
+Thu Dec 08 20:57:53 2022
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 10 -gt -sethld -sp 4 -sphld m -o project6_impl1.twr -gui -msgset C:/VHDL/lab/lab6/promote.xml project6_impl1.ncd project6_impl1.prf 
+Design file:     project6_impl1.ncd
+Preference file: project6_impl1.prf
+Device,speed:    LCMXO2-4000HC,4
+Report level:    verbose report, limited to 10 items per preference
+--------------------------------------------------------------------------------
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+Timing summary (Setup):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 2147483647 paths, 5 nets, and 4226 connections (99.62% coverage)
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.12.0.240.2
+Thu Dec 08 20:57:54 2022
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 10 -gt -sethld -sp 4 -sphld m -o project6_impl1.twr -gui -msgset C:/VHDL/lab/lab6/promote.xml project6_impl1.ncd project6_impl1.prf 
+Design file:     project6_impl1.ncd
+Preference file: project6_impl1.prf
+Device,speed:    LCMXO2-4000HC,m
+Report level:    verbose report, limited to 10 items per preference
+--------------------------------------------------------------------------------
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+Timing summary (Hold):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 2147483647 paths, 5 nets, and 4226 connections (99.62% coverage)
+
+
+
+Timing summary (Setup and Hold):
+---------------
+
+Timing errors: 0 (setup), 0 (hold)
+Score: 0 (setup), 0 (hold)
+Cumulative negative slack: 0 (0+0)
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+
+Total CPU Time: 2 secs 
+Total REAL Time: 4 secs 
+Peak Memory Usage: 64 MB
+
+
+tmcheck -par "project6_impl1.par" 
+
+bitgen -f "project6_impl1.t2b" -w "project6_impl1.ncd"  -jedec "project6_impl1.prf"
+
+
+BITGEN: Bitstream Generator Diamond (64-bit) 3.12.0.240.2
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
+
+
+Loading design for application Bitgen from file project6_impl1.ncd.
+Design name: main
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: 4
+Loading device for application Bitgen from file 'xo2c4000.nph' in environment: C:/lscc/diamond/3.12/ispfpga.
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+
+Running DRC.
+DRC detected 0 errors and 0 warnings.
+Reading Preference File from project6_impl1.prf.
+
+Preference Summary:
++---------------------------------+---------------------------------+
+|  Preference                     |  Current Setting                |
++---------------------------------+---------------------------------+
+|                         RamCfg  |                        Reset**  |
++---------------------------------+---------------------------------+
+|                     MCCLK_FREQ  |                         2.08**  |
++---------------------------------+---------------------------------+
+|                  CONFIG_SECURE  |                          OFF**  |
++---------------------------------+---------------------------------+
+|                          INBUF  |                           ON**  |
++---------------------------------+---------------------------------+
+|                      JTAG_PORT  |                       ENABLE**  |
++---------------------------------+---------------------------------+
+|                       SDM_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                 SLAVE_SPI_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                MASTER_SPI_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                       I2C_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|        MUX_CONFIGURATION_PORTS  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                  CONFIGURATION  |                          CFG**  |
++---------------------------------+---------------------------------+
+|                COMPRESS_CONFIG  |                           ON**  |
++---------------------------------+---------------------------------+
+|                        MY_ASSP  |                          OFF**  |
++---------------------------------+---------------------------------+
+|               ONE_TIME_PROGRAM  |                          OFF**  |
++---------------------------------+---------------------------------+
+|                 ENABLE_TRANSFR  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                  SHAREDEBRINIT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|            BACKGROUND_RECONFIG  |                          OFF**  |
++---------------------------------+---------------------------------+
+ *  Default setting.
+ ** The specified setting matches the default setting.
+
+
+Creating bit map...
+ 
+Bitstream Status: Final           Version 1.95.
+ 
+Saving bit stream in "project6_impl1.jed".
+ 
+===========
+UFM Summary.
+===========
+UFM Size:        767 Pages (128*767 Bits).
+UFM Utilization: General Purpose Flash Memory.
+ 
+Available General Purpose Flash Memory:  767 Pages (Page 0 to Page 766).
+Initialized UFM Pages:                     0 Page.
+ 
+Total CPU Time: 8 secs 
+Total REAL Time: 9 secs 
+Peak Memory Usage: 275 MB

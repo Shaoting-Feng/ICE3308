@@ -1,0 +1,604 @@
+--------------------------------------------------------------------------------
+Lattice Synthesis Timing Report, Version  
+Thu Dec 08 00:59:19 2022
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Design:     main
+Constraint file:  
+Report level:    verbose report, limited to 3 items per constraint
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Constraint: create_clock -period 5.000000 -name clk4 [get_nets clk_20ms]
+            0 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+================================================================================
+Constraint: create_clock -period 5.000000 -name clk3 [get_nets clock_c_derived_1]
+            0 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+================================================================================
+Constraint: create_clock -period 5.000000 -name clk2 [get_nets clk_1us]
+            0 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+================================================================================
+Constraint: create_clock -period 5.000000 -name clk1 [get_nets clk_100us]
+            7 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed:  The following path meets requirements by 0.873ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3AX    CK             select_segment_i2_1962__i0  (from clk_100us +)
+   Destination:    FD1S3AX    D              select_segment_i2_1962__i2  (to clk_100us +)
+
+   Delay:                   3.967ns  (23.6% logic, 76.4% route), 2 logic levels.
+
+ Constraint Details:
+
+      3.967ns data_path select_segment_i2_1962__i0 to select_segment_i2_1962__i2 meets
+      5.000ns delay constraint less
+      0.160ns L_S requirement (totaling 4.840ns) by 0.873ns
+
+ Path Details: select_segment_i2_1962__i0 to select_segment_i2_1962__i2
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              select_segment_i2_1962__i0 (from clk_100us)
+Route        28   e 2.089                                  select_segment[0]
+LUT4        ---     0.493              D to Z              select_segment[2]_bdd_4_lut
+Route         1   e 0.941                                  n27477
+                  --------
+                    3.967  (23.6% logic, 76.4% route), 2 logic levels.
+
+
+Passed:  The following path meets requirements by 0.873ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3AX    CK             select_segment_i2_1962__i0  (from clk_100us +)
+   Destination:    FD1S3AX    D              select_segment_i2_1962__i1  (to clk_100us +)
+
+   Delay:                   3.967ns  (23.6% logic, 76.4% route), 2 logic levels.
+
+ Constraint Details:
+
+      3.967ns data_path select_segment_i2_1962__i0 to select_segment_i2_1962__i1 meets
+      5.000ns delay constraint less
+      0.160ns L_S requirement (totaling 4.840ns) by 0.873ns
+
+ Path Details: select_segment_i2_1962__i0 to select_segment_i2_1962__i1
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              select_segment_i2_1962__i0 (from clk_100us)
+Route        28   e 2.089                                  select_segment[0]
+LUT4        ---     0.493              C to Z              i21929_4_lut
+Route         1   e 0.941                                  n19
+                  --------
+                    3.967  (23.6% logic, 76.4% route), 2 logic levels.
+
+
+Passed:  The following path meets requirements by 0.873ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3AX    CK             select_segment_i2_1962__i0  (from clk_100us +)
+   Destination:    FD1S3AX    D              select_segment_i2_1962__i0  (to clk_100us +)
+
+   Delay:                   3.967ns  (23.6% logic, 76.4% route), 2 logic levels.
+
+ Constraint Details:
+
+      3.967ns data_path select_segment_i2_1962__i0 to select_segment_i2_1962__i0 meets
+      5.000ns delay constraint less
+      0.160ns L_S requirement (totaling 4.840ns) by 0.873ns
+
+ Path Details: select_segment_i2_1962__i0 to select_segment_i2_1962__i0
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              select_segment_i2_1962__i0 (from clk_100us)
+Route        28   e 2.089                                  select_segment[0]
+LUT4        ---     0.493              B to Z              i1_2_lut_adj_6
+Route         1   e 0.941                                  n25897
+                  --------
+                    3.967  (23.6% logic, 76.4% route), 2 logic levels.
+
+Report: 4.127 ns is the maximum delay for this constraint.
+
+
+
+================================================================================
+Constraint: create_clock -period 5.000000 -name clk0 [get_nets clock_c]
+            4096 items scored, 4096 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Error:  The following path violates requirements by 57.100ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3AX    CK             t_decimal__i19  (from clock_c +)
+   Destination:    FD1P3AX    D              t_decimal_5_i0_i1  (to clock_c +)
+
+   Delay:                  61.940ns  (27.0% logic, 73.0% route), 34 logic levels.
+
+ Constraint Details:
+
+     61.940ns data_path t_decimal__i19 to t_decimal_5_i0_i1 violates
+      5.000ns delay constraint less
+      0.160ns L_S requirement (totaling 4.840ns) by 57.100ns
+
+ Path Details: t_decimal__i19 to t_decimal_5_i0_i1
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              t_decimal__i19 (from clock_c)
+Route        12   e 1.714                                  t_decimal[18]
+LUT4        ---     0.493              C to Z              i2064_3_lut_rep_496
+Route         2   e 1.141                                  n27987
+LUT4        ---     0.493              B to Z              i3188_2_lut_rep_447_3_lut
+Route         5   e 1.405                                  n27938
+LUT4        ---     0.493              D to Z              i2249_3_lut_rep_435_4_lut
+Route         3   e 1.258                                  n27926
+LUT4        ---     0.493              D to Z              i3183_3_lut_4_lut
+Route         9   e 1.574                                  t_decimal_1_3__N_206
+LUT4        ---     0.493              C to Z              i2060_3_lut_rep_422_4_lut
+Route         3   e 1.258                                  n27913
+LUT4        ---     0.493              D to Z              i3456_3_lut_4_lut
+Route         9   e 1.574                                  t_decimal_1_3__N_191
+LUT4        ---     0.493              C to Z              i3035_3_lut_4_lut_3_lut_4_lut
+Route         5   e 1.405                                  t_decimal_2_3__N_306
+LUT4        ---     0.493              C to Z              i2673_2_lut_rep_405_3_lut
+Route         5   e 1.405                                  n27896
+LUT4        ---     0.493              D to Z              i2196_3_lut_rep_399_4_lut
+Route         2   e 1.141                                  n27890
+LUT4        ---     0.493              D to Z              i2668_3_lut_4_lut
+Route         9   e 1.574                                  t_decimal_2_3__N_348
+LUT4        ---     0.493              C to Z              i2273_3_lut_rep_384_4_lut
+Route         2   e 1.141                                  n27875
+LUT4        ---     0.493              D to Z              i2528_3_lut_4_lut
+Route         9   e 1.574                                  t_decimal_2_3__N_304
+LUT4        ---     0.493              C to Z              i2458_3_lut_4_lut_3_lut_4_lut
+Route         4   e 1.340                                  t_decimal_3_3__N_443
+LUT4        ---     0.493              C to Z              i2278_2_lut_rep_357_3_lut
+Route         5   e 1.405                                  n27848
+LUT4        ---     0.493              D to Z              i2239_3_lut_rep_350_4_lut
+Route         2   e 1.141                                  n27841
+LUT4        ---     0.493              D to Z              i3624_3_lut_4_lut
+Route         9   e 1.574                                  t_decimal_3_3__N_512
+LUT4        ---     0.493              C to Z              i2245_3_lut_rep_331_4_lut
+Route         2   e 1.141                                  n27822
+LUT4        ---     0.493              D to Z              i3400_3_lut_4_lut
+Route        10   e 1.604                                  t_decimal_3_3__N_441
+LUT4        ---     0.493              C to Z              i2068_3_lut_rep_309_4_lut
+Route         2   e 1.141                                  n27800
+LUT4        ---     0.493              D to Z              i3155_3_lut_4_lut
+Route        10   e 1.604                                  t_decimal_3_3__N_524
+LUT4        ---     0.493              C to Z              i2204_3_lut_rep_284_4_lut
+Route         2   e 1.141                                  n27775
+LUT4        ---     0.493              D to Z              i2584_3_lut_4_lut
+Route         9   e 1.574                                  t_decimal_3_3__N_532
+LUT4        ---     0.493              C to Z              i3904_3_lut_4_lut_3_lut_4_lut
+Route         5   e 1.405                                  t_decimal_4_3__N_686
+LUT4        ---     0.493              C to Z              i2206_2_lut_rep_231_3_lut
+Route         4   e 1.340                                  n27722
+LUT4        ---     0.493              D to Z              i2056_3_lut_rep_220_4_lut
+Route         3   e 1.258                                  n27711
+LUT4        ---     0.493              D to Z              i3729_3_lut_4_lut
+Route         9   e 1.574                                  t_decimal_4_3__N_688
+LUT4        ---     0.493              C to Z              i3358_3_lut_rep_181_4_lut_3_lut_4_lut
+Route         3   e 1.258                                  n27672
+LUT4        ---     0.493              C to Z              i2177_2_lut_3_lut
+Route         2   e 1.141                                  n4_adj_55
+LUT4        ---     0.493              A to Z              i2067_4_lut_rep_173
+Route         3   e 1.258                                  n27664
+LUT4        ---     0.493              D to Z              i3231_2_lut_rep_169_4_lut_4_lut
+Route         1   e 0.941                                  n27660
+LUT4        ---     0.493              D to Z              i3524_2_lut_4_lut_4_lut
+Route         2   e 1.141                                  n9706
+LUT4        ---     0.493              A to Z              i2243_4_lut_rep_165
+Route         2   e 1.141                                  n27656
+LUT4        ---     0.493              D to Z              i3511_2_lut_4_lut_4_lut
+Route         1   e 0.941                                  t_decimal_5_3__N_854
+                  --------
+                   61.940  (27.0% logic, 73.0% route), 34 logic levels.
+
+
+Error:  The following path violates requirements by 57.100ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3AX    CK             t_decimal__i19  (from clock_c +)
+   Destination:    FD1P3AX    D              t_decimal_5_i0_i2  (to clock_c +)
+
+   Delay:                  61.940ns  (27.0% logic, 73.0% route), 34 logic levels.
+
+ Constraint Details:
+
+     61.940ns data_path t_decimal__i19 to t_decimal_5_i0_i2 violates
+      5.000ns delay constraint less
+      0.160ns L_S requirement (totaling 4.840ns) by 57.100ns
+
+ Path Details: t_decimal__i19 to t_decimal_5_i0_i2
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              t_decimal__i19 (from clock_c)
+Route        12   e 1.714                                  t_decimal[18]
+LUT4        ---     0.493              C to Z              i2064_3_lut_rep_496
+Route         2   e 1.141                                  n27987
+LUT4        ---     0.493              B to Z              i3188_2_lut_rep_447_3_lut
+Route         5   e 1.405                                  n27938
+LUT4        ---     0.493              D to Z              i2249_3_lut_rep_435_4_lut
+Route         3   e 1.258                                  n27926
+LUT4        ---     0.493              D to Z              i3183_3_lut_4_lut
+Route         9   e 1.574                                  t_decimal_1_3__N_206
+LUT4        ---     0.493              C to Z              i2060_3_lut_rep_422_4_lut
+Route         3   e 1.258                                  n27913
+LUT4        ---     0.493              D to Z              i3456_3_lut_4_lut
+Route         9   e 1.574                                  t_decimal_1_3__N_191
+LUT4        ---     0.493              C to Z              i3035_3_lut_4_lut_3_lut_4_lut
+Route         5   e 1.405                                  t_decimal_2_3__N_306
+LUT4        ---     0.493              C to Z              i2673_2_lut_rep_405_3_lut
+Route         5   e 1.405                                  n27896
+LUT4        ---     0.493              D to Z              i2196_3_lut_rep_399_4_lut
+Route         2   e 1.141                                  n27890
+LUT4        ---     0.493              D to Z              i2668_3_lut_4_lut
+Route         9   e 1.574                                  t_decimal_2_3__N_348
+LUT4        ---     0.493              C to Z              i2273_3_lut_rep_384_4_lut
+Route         2   e 1.141                                  n27875
+LUT4        ---     0.493              D to Z              i2528_3_lut_4_lut
+Route         9   e 1.574                                  t_decimal_2_3__N_304
+LUT4        ---     0.493              C to Z              i2458_3_lut_4_lut_3_lut_4_lut
+Route         4   e 1.340                                  t_decimal_3_3__N_443
+LUT4        ---     0.493              C to Z              i2278_2_lut_rep_357_3_lut
+Route         5   e 1.405                                  n27848
+LUT4        ---     0.493              D to Z              i2239_3_lut_rep_350_4_lut
+Route         2   e 1.141                                  n27841
+LUT4        ---     0.493              D to Z              i3624_3_lut_4_lut
+Route         9   e 1.574                                  t_decimal_3_3__N_512
+LUT4        ---     0.493              C to Z              i2245_3_lut_rep_331_4_lut
+Route         2   e 1.141                                  n27822
+LUT4        ---     0.493              D to Z              i3400_3_lut_4_lut
+Route        10   e 1.604                                  t_decimal_3_3__N_441
+LUT4        ---     0.493              C to Z              i2068_3_lut_rep_309_4_lut
+Route         2   e 1.141                                  n27800
+LUT4        ---     0.493              D to Z              i3155_3_lut_4_lut
+Route        10   e 1.604                                  t_decimal_3_3__N_524
+LUT4        ---     0.493              C to Z              i2204_3_lut_rep_284_4_lut
+Route         2   e 1.141                                  n27775
+LUT4        ---     0.493              D to Z              i2584_3_lut_4_lut
+Route         9   e 1.574                                  t_decimal_3_3__N_532
+LUT4        ---     0.493              C to Z              i3904_3_lut_4_lut_3_lut_4_lut
+Route         5   e 1.405                                  t_decimal_4_3__N_686
+LUT4        ---     0.493              C to Z              i2206_2_lut_rep_231_3_lut
+Route         4   e 1.340                                  n27722
+LUT4        ---     0.493              D to Z              i2056_3_lut_rep_220_4_lut
+Route         3   e 1.258                                  n27711
+LUT4        ---     0.493              D to Z              i3729_3_lut_4_lut
+Route         9   e 1.574                                  t_decimal_4_3__N_688
+LUT4        ---     0.493              C to Z              i3358_3_lut_rep_181_4_lut_3_lut_4_lut
+Route         3   e 1.258                                  n27672
+LUT4        ---     0.493              C to Z              i2177_2_lut_3_lut
+Route         2   e 1.141                                  n4_adj_55
+LUT4        ---     0.493              A to Z              i2067_4_lut_rep_173
+Route         3   e 1.258                                  n27664
+LUT4        ---     0.493              D to Z              i3231_2_lut_rep_169_4_lut_4_lut
+Route         1   e 0.941                                  n27660
+LUT4        ---     0.493              D to Z              i3524_2_lut_4_lut_4_lut
+Route         2   e 1.141                                  n9706
+LUT4        ---     0.493              A to Z              i2243_4_lut_rep_165
+Route         2   e 1.141                                  n27656
+LUT4        ---     0.493              D to Z              i3519_3_lut_4_lut
+Route         1   e 0.941                                  t_decimal_5_3__N_852
+                  --------
+                   61.940  (27.0% logic, 73.0% route), 34 logic levels.
+
+
+Error:  The following path violates requirements by 57.048ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3AX    CK             t_decimal__i19  (from clock_c +)
+   Destination:    FD1P3AX    D              t_decimal_5_i0_i1  (to clock_c +)
+
+   Delay:                  61.888ns  (27.0% logic, 73.0% route), 34 logic levels.
+
+ Constraint Details:
+
+     61.888ns data_path t_decimal__i19 to t_decimal_5_i0_i1 violates
+      5.000ns delay constraint less
+      0.160ns L_S requirement (totaling 4.840ns) by 57.048ns
+
+ Path Details: t_decimal__i19 to t_decimal_5_i0_i1
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              t_decimal__i19 (from clock_c)
+Route        12   e 1.714                                  t_decimal[18]
+LUT4        ---     0.493              C to Z              i2064_3_lut_rep_496
+Route         2   e 1.141                                  n27987
+LUT4        ---     0.493              B to Z              i3188_2_lut_rep_447_3_lut
+Route         5   e 1.405                                  n27938
+LUT4        ---     0.493              D to Z              i2249_3_lut_rep_435_4_lut
+Route         3   e 1.258                                  n27926
+LUT4        ---     0.493              D to Z              i3183_3_lut_4_lut
+Route         9   e 1.574                                  t_decimal_1_3__N_206
+LUT4        ---     0.493              C to Z              i2060_3_lut_rep_422_4_lut
+Route         3   e 1.258                                  n27913
+LUT4        ---     0.493              D to Z              i3456_3_lut_4_lut
+Route         9   e 1.574                                  t_decimal_1_3__N_191
+LUT4        ---     0.493              C to Z              i3035_3_lut_4_lut_3_lut_4_lut
+Route         5   e 1.405                                  t_decimal_2_3__N_306
+LUT4        ---     0.493              C to Z              i2673_2_lut_rep_405_3_lut
+Route         5   e 1.405                                  n27896
+LUT4        ---     0.493              D to Z              i2196_3_lut_rep_399_4_lut
+Route         2   e 1.141                                  n27890
+LUT4        ---     0.493              D to Z              i2668_3_lut_4_lut
+Route         9   e 1.574                                  t_decimal_2_3__N_348
+LUT4        ---     0.493              C to Z              i2273_3_lut_rep_384_4_lut
+Route         2   e 1.141                                  n27875
+LUT4        ---     0.493              D to Z              i2528_3_lut_4_lut
+Route         9   e 1.574                                  t_decimal_2_3__N_304
+LUT4        ---     0.493              C to Z              i2458_3_lut_4_lut_3_lut_4_lut
+Route         4   e 1.340                                  t_decimal_3_3__N_443
+LUT4        ---     0.493              C to Z              i2278_2_lut_rep_357_3_lut
+Route         5   e 1.405                                  n27848
+LUT4        ---     0.493              D to Z              i2239_3_lut_rep_350_4_lut
+Route         2   e 1.141                                  n27841
+LUT4        ---     0.493              D to Z              i3624_3_lut_4_lut
+Route         9   e 1.574                                  t_decimal_3_3__N_512
+LUT4        ---     0.493              C to Z              i2245_3_lut_rep_331_4_lut
+Route         2   e 1.141                                  n27822
+LUT4        ---     0.493              D to Z              i3400_3_lut_4_lut
+Route        10   e 1.604                                  t_decimal_3_3__N_441
+LUT4        ---     0.493              C to Z              i2068_3_lut_rep_309_4_lut
+Route         2   e 1.141                                  n27800
+LUT4        ---     0.493              D to Z              i3155_3_lut_4_lut
+Route        10   e 1.604                                  t_decimal_3_3__N_524
+LUT4        ---     0.493              C to Z              i2204_3_lut_rep_284_4_lut
+Route         2   e 1.141                                  n27775
+LUT4        ---     0.493              D to Z              i2584_3_lut_4_lut
+Route         9   e 1.574                                  t_decimal_3_3__N_532
+LUT4        ---     0.493              C to Z              i2050_3_lut_rep_259_4_lut
+Route         2   e 1.141                                  n27750
+LUT4        ---     0.493              D to Z              i3890_3_lut_4_lut
+Route         9   e 1.574                                  t_decimal_3_3__N_434
+LUT4        ---     0.493              C to Z              i3771_3_lut_4_lut_3_lut_4_lut
+Route         5   e 1.405                                  t_decimal_4_3__N_573
+LUT4        ---     0.493              C to Z              i2197_2_lut_rep_203_3_lut
+Route         5   e 1.405                                  n27694
+LUT4        ---     0.493              D to Z              i3358_3_lut_rep_181_4_lut_3_lut_4_lut
+Route         3   e 1.258                                  n27672
+LUT4        ---     0.493              C to Z              i2177_2_lut_3_lut
+Route         2   e 1.141                                  n4_adj_55
+LUT4        ---     0.493              A to Z              i2067_4_lut_rep_173
+Route         3   e 1.258                                  n27664
+LUT4        ---     0.493              D to Z              i3231_2_lut_rep_169_4_lut_4_lut
+Route         1   e 0.941                                  n27660
+LUT4        ---     0.493              D to Z              i3524_2_lut_4_lut_4_lut
+Route         2   e 1.141                                  n9706
+LUT4        ---     0.493              A to Z              i2243_4_lut_rep_165
+Route         2   e 1.141                                  n27656
+LUT4        ---     0.493              D to Z              i3511_2_lut_4_lut_4_lut
+Route         1   e 0.941                                  t_decimal_5_3__N_854
+                  --------
+                   61.888  (27.0% logic, 73.0% route), 34 logic levels.
+
+Warning: 62.100 ns is the maximum delay for this constraint.
+
+
+Timing Report Summary
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk4 [get_nets clk_20ms]                |            -|            -|     0  
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk3 [get_nets clock_c_derived_1]       |            -|            -|     0  
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk2 [get_nets clk_1us]                 |            -|            -|     0  
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk1 [get_nets clk_100us]               |     5.000 ns|     4.127 ns|     2  
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk0 [get_nets clock_c]                 |     5.000 ns|    62.100 ns|    34 *
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+1 constraints not met.
+
+--------------------------------------------------------------------------------
+Critical Nets                           |   Loads|  Errors| % of total
+--------------------------------------------------------------------------------
+n27664                                  |       3|    4096|     99.00%
+                                        |        |        |
+n27913                                  |       3|    4096|     99.00%
+                                        |        |        |
+n27926                                  |       3|    4096|     99.00%
+                                        |        |        |
+n27656                                  |       2|    4093|     99.93%
+                                        |        |        |
+n27938                                  |       5|    4068|     99.32%
+                                        |        |        |
+n27987                                  |       2|    4066|     99.27%
+                                        |        |        |
+n9706                                   |       2|    4050|     98.88%
+                                        |        |        |
+n27660                                  |       1|    4050|     98.88%
+                                        |        |        |
+n4_adj_55                               |       2|    3546|     86.57%
+                                        |        |        |
+n27672                                  |       3|    3194|     77.98%
+                                        |        |        |
+t_decimal_1_3__N_191                    |       9|    2912|     71.09%
+                                        |        |        |
+t_decimal_1_3__N_206                    |       9|    2912|     71.09%
+                                        |        |        |
+n27722                                  |       4|    2500|     61.04%
+                                        |        |        |
+t_decimal_4_3__N_686                    |       5|    2500|     61.04%
+                                        |        |        |
+n27893                                  |       3|    2163|     52.81%
+                                        |        |        |
+n27905                                  |       3|    2163|     52.81%
+                                        |        |        |
+n27879                                  |       3|    2161|     52.76%
+                                        |        |        |
+n27694                                  |       5|    2140|     52.25%
+                                        |        |        |
+t_decimal_5_3__N_854                    |       1|    2061|     50.32%
+                                        |        |        |
+t_decimal_5_3__N_852                    |       1|    2032|     49.61%
+                                        |        |        |
+n27890                                  |       2|    1933|     47.19%
+                                        |        |        |
+n27896                                  |       5|    1933|     47.19%
+                                        |        |        |
+t_decimal_2_3__N_306                    |       5|    1933|     47.19%
+                                        |        |        |
+t_decimal_2_3__N_348                    |       9|    1933|     47.19%
+                                        |        |        |
+t_decimal_1_3__N_186                    |       9|    1875|     45.78%
+                                        |        |        |
+n27841                                  |       2|    1873|     45.73%
+                                        |        |        |
+n27848                                  |       5|    1873|     45.73%
+                                        |        |        |
+t_decimal_3_3__N_443                    |       4|    1873|     45.73%
+                                        |        |        |
+t_decimal_3_3__N_512                    |       9|    1873|     45.73%
+                                        |        |        |
+n27760                                  |       4|    1843|     45.00%
+                                        |        |        |
+t_decimal_1_3__N_222                    |      10|    1759|     42.94%
+                                        |        |        |
+t_decimal_1_3__N_214                    |      10|    1758|     42.92%
+                                        |        |        |
+n27851                                  |       3|    1737|     42.41%
+                                        |        |        |
+n27866                                  |       3|    1737|     42.41%
+                                        |        |        |
+n27775                                  |       2|    1709|     41.72%
+                                        |        |        |
+t_decimal_3_3__N_532                    |       9|    1709|     41.72%
+                                        |        |        |
+n27711                                  |       3|    1598|     39.01%
+                                        |        |        |
+t_decimal_4_3__N_573                    |       5|    1596|     38.96%
+                                        |        |        |
+n27800                                  |       2|    1525|     37.23%
+                                        |        |        |
+t_decimal_3_3__N_524                    |      10|    1525|     37.23%
+                                        |        |        |
+t_decimal_1_3__N_238                    |       9|    1485|     36.25%
+                                        |        |        |
+t_decimal_1_3__N_230                    |      10|    1391|     33.96%
+                                        |        |        |
+t_decimal[18]                           |      12|    1367|     33.37%
+                                        |        |        |
+n27811                                  |       5|    1336|     32.62%
+                                        |        |        |
+t_decimal_2_3__N_378                    |       5|    1276|     31.15%
+                                        |        |        |
+n27803                                  |       3|    1274|     31.10%
+                                        |        |        |
+n27908                                  |       4|    1184|     28.91%
+                                        |        |        |
+n27917                                  |       4|    1184|     28.91%
+                                        |        |        |
+n27822                                  |       2|    1175|     28.69%
+                                        |        |        |
+t_decimal_3_3__N_441                    |      10|    1175|     28.69%
+                                        |        |        |
+t_decimal[16]                           |      10|    1105|     26.98%
+                                        |        |        |
+t_decimal_4_3__N_688                    |       9|    1054|     25.73%
+                                        |        |        |
+t_decimal_2_3__N_380                    |      10|    1040|     25.39%
+                                        |        |        |
+n27875                                  |       2|    1035|     25.27%
+                                        |        |        |
+t_decimal_2_3__N_304                    |       9|    1035|     25.27%
+                                        |        |        |
+n4_adj_66                               |       2|     902|     22.02%
+                                        |        |        |
+n27680                                  |       3|     902|     22.02%
+                                        |        |        |
+n27697                                  |       4|     902|     22.02%
+                                        |        |        |
+n27865                                  |       4|     900|     21.97%
+                                        |        |        |
+n27872                                  |       2|     898|     21.92%
+                                        |        |        |
+t_decimal[19]                           |       8|     878|     21.44%
+                                        |        |        |
+n27750                                  |       2|     842|     20.56%
+                                        |        |        |
+t_decimal_3_3__N_434                    |       9|     842|     20.56%
+                                        |        |        |
+n27785                                  |       5|     826|     20.17%
+                                        |        |        |
+n27731                                  |       4|     754|     18.41%
+                                        |        |        |
+t_decimal[17]                           |       7|     746|     18.21%
+                                        |        |        |
+n27809                                  |       5|     742|     18.12%
+                                        |        |        |
+n27816                                  |       2|     712|     17.38%
+                                        |        |        |
+n27789                                  |       5|     695|     16.97%
+                                        |        |        |
+n27767                                  |       2|     652|     15.92%
+                                        |        |        |
+t_decimal_5_3__N_840                    |       4|     550|     13.43%
+                                        |        |        |
+n27844                                  |       2|     468|     11.43%
+                                        |        |        |
+t_decimal_2_3__N_368                    |      10|     468|     11.43%
+                                        |        |        |
+n27832                                  |       3|     461|     11.25%
+                                        |        |        |
+t_decimal_2_3__N_292                    |       4|     461|     11.25%
+                                        |        |        |
+n27779                                  |       2|     446|     10.89%
+                                        |        |        |
+t_decimal_2_3__N_388                    |      10|     446|     10.89%
+                                        |        |        |
+n27823                                  |       3|     442|     10.79%
+                                        |        |        |
+n27850                                  |       5|     428|     10.45%
+                                        |        |        |
+t_decimal_2_3__N_299                    |       4|     424|     10.35%
+                                        |        |        |
+--------------------------------------------------------------------------------
+
+
+Timing summary:
+---------------
+
+Timing errors: 4096  Score: 228779568
+
+Constraints cover >4294967295 paths, 1497 nets, and 4330 connections (94.5% coverage)
+
+
+Peak memory: 226394112 bytes, TRCE: 15867904 bytes, DLYMAN: 290816 bytes
+CPU_TIME_REPORT: 0 secs 

@@ -1,0 +1,110 @@
+[ START MERGED ]
+n28467 select_segment_1
+n7582 tMeasure_DQ_N_1470
+clk_20ms_enable_1 key2_c
+n11491 key1_c
+[ END MERGED ]
+[ START CLIPPED ]
+GND_net
+add_4072_19/CO
+clk_1us_cnt_1975_add_4_33/S1
+clk_1us_cnt_1975_add_4_33/CO
+add_4065_1/S1
+add_4065_1/S0
+add_4065_1/CI
+add_675_33/S1
+add_675_33/CO
+add_4065_cout/S1
+add_4065_cout/CO
+clk_20ms_cnt_1972_add_4_1/S0
+clk_20ms_cnt_1972_add_4_1/CI
+add_4014_add_1_2/S0
+add_4014_add_1_2/CI
+add_4071_2/S0
+add_4071_2/CI
+clk_20ms_cnt_1972_add_4_33/S1
+clk_20ms_cnt_1972_add_4_33/CO
+clk_500ms_cnt_1974_add_4_1/S0
+clk_500ms_cnt_1974_add_4_1/CI
+add_4014_add_1_cout/S1
+add_4014_add_1_cout/CO
+add_1970_1/S0
+add_1970_1/CI
+sub_1764_add_2_25/S1
+sub_1764_add_2_25/S0
+clk_500ms_cnt_1974_add_4_33/S1
+clk_500ms_cnt_1974_add_4_33/CO
+clk_100us_cnt_1973_add_4_1/S0
+clk_100us_cnt_1973_add_4_1/CI
+add_1970_cout/S1
+add_1970_cout/CO
+add_4060_2/S0
+add_4060_2/CI
+add_4071_20/CO
+sub_1764_add_2_1/S1
+sub_1764_add_2_1/S0
+sub_1764_add_2_1/CI
+sub_1764_add_2_3/S1
+sub_1764_add_2_3/S0
+sub_1764_add_2_5/S1
+sub_1764_add_2_5/S0
+sub_1764_add_2_7/S1
+sub_1764_add_2_7/S0
+sub_1764_add_2_9/S1
+sub_1764_add_2_9/S0
+sub_1764_add_2_11/S1
+sub_1764_add_2_11/S0
+sub_1764_add_2_13/S1
+sub_1764_add_2_13/S0
+sub_1764_add_2_15/S1
+sub_1764_add_2_15/S0
+sub_1764_add_2_17/S1
+sub_1764_add_2_17/S0
+sub_1764_add_2_19/S1
+sub_1764_add_2_19/S0
+sub_1764_add_2_27/S1
+sub_1764_add_2_27/S0
+sub_1764_add_2_21/S1
+sub_1764_add_2_21/S0
+sub_1764_add_2_23/S1
+sub_1764_add_2_23/S0
+sub_1764_add_2_29/S1
+sub_1764_add_2_29/S0
+sub_1764_add_2_31/S1
+sub_1764_add_2_31/S0
+sub_1764_add_2_33/S0
+sub_1764_add_2_33/CO
+add_4060_cout/S1
+add_4060_cout/CO
+clk_100us_cnt_1973_add_4_33/S1
+clk_100us_cnt_1973_add_4_33/CO
+add_675_1/S0
+add_675_1/CI
+add_4072_1/S1
+add_4072_1/S0
+add_4072_1/CI
+clk_1us_cnt_1975_add_4_1/S0
+clk_1us_cnt_1975_add_4_1/CI
+[ END CLIPPED ]
+[ START DESIGN PREFS ]
+SCHEMATIC START ;
+# map:  version Diamond (64-bit) 3.12.0.240.2 -- WARNING: Map write only section -- Thu Dec 08 20:56:29 2022
+
+SYSCONFIG SDM_PORT=DISABLE SLAVE_SPI_PORT=DISABLE I2C_PORT=DISABLE MASTER_SPI_PORT=DISABLE COMPRESS_CONFIG=ON CONFIGURATION=CFG MY_ASSP=OFF ONE_TIME_PROGRAM=OFF CONFIG_SECURE=OFF MCCLK_FREQ=2.08 JTAG_PORT=ENABLE ENABLE_TRANSFR=DISABLE SHAREDEBRINIT=DISABLE MUX_CONFIGURATION_PORTS=DISABLE BACKGROUND_RECONFIG=OFF INBUF=ON ;
+LOCATE COMP "led1[2]" SITE "M2" ;
+LOCATE COMP "led1[1]" SITE "N2" ;
+LOCATE COMP "data" SITE "G3" ;
+LOCATE COMP "rck" SITE "H3" ;
+LOCATE COMP "sck" SITE "J2" ;
+LOCATE COMP "tMeasure_DQ" SITE "H12" ;
+LOCATE COMP "led1[0]" SITE "P2" ;
+LOCATE COMP "led2[2]" SITE "M3" ;
+LOCATE COMP "led2[1]" SITE "N3" ;
+LOCATE COMP "led2[0]" SITE "P4" ;
+LOCATE COMP "clock" SITE "C1" ;
+LOCATE COMP "key1" SITE "M14" ;
+LOCATE COMP "key2" SITE "N14" ;
+LOCATE COMP "key3" SITE "M13" ;
+FREQUENCY PORT "clock" 12.000000 MHz ;
+SCHEMATIC END ;
+[ END DESIGN PREFS ]

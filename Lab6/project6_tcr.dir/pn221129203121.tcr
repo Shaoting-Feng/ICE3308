@@ -1,0 +1,8 @@
+#Start recording tcl command: 11/29/2022 14:17:04
+#Project Location: D:/diamond/code/project6; Project name: project6
+prj_project open "D:/diamond/code/project6/project6.ldf"
+prj_run Synthesis -impl impl1
+prj_run Export -impl impl1 -task Jedecgen
+prj_run Synthesis -impl impl1
+prj_run Export -impl impl1 -task Jedecgen
+#Stop recording: 11/29/2022 20:31:21

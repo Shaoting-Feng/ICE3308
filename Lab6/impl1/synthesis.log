@@ -1,0 +1,239 @@
+synthesis:  version Diamond (64-bit) 3.12.0.240.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
+Thu Dec 08 20:55:09 2022
+
+
+Command Line:  synthesis -f project6_impl1_lattice.synproj -gui -msgset C:/VHDL/lab/lab6/promote.xml 
+
+Synthesis options:
+The -a option is MachXO2.
+The -s option is 4.
+The -t option is CSBGA132.
+The -d option is LCMXO2-4000HC.
+Using package CSBGA132.
+Using performance grade 4.
+                                                          
+
+##########################################################
+
+### Lattice Family : MachXO2
+
+### Device  : LCMXO2-4000HC
+
+### Package : CSBGA132
+
+### Speed   : 4
+
+##########################################################
+
+                                                          
+
+INFO - synthesis: User-Selected Strategy Settings
+Optimization goal = Balanced
+Top-level module name = main.
+Target frequency = 200.000000 MHz.
+Maximum fanout = 1000.
+Timing path count = 3
+BRAM utilization = 100.000000 %
+DSP usage = true
+DSP utilization = 100.000000 %
+fsm_encoding_style = auto
+resolve_mixed_drivers = 0
+fix_gated_clocks = 1
+
+Mux style = Auto
+Use Carry Chain = true
+carry_chain_length = 0
+Loop Limit = 1950.
+Use IO Insertion = TRUE
+Use IO Reg = AUTO
+
+Resource Sharing = TRUE
+Propagate Constants = TRUE
+Remove Duplicate Registers = TRUE
+force_gsr = auto
+ROM style = auto
+RAM style = auto
+The -comp option is FALSE.
+The -syn option is FALSE.
+-p C:/lscc/diamond/3.12/ispfpga/xo2c00/data (searchpath added)
+-p C:/VHDL/lab/lab6/impl1 (searchpath added)
+-p C:/VHDL/lab/lab6 (searchpath added)
+VHDL library = work
+VHDL design file = C:/VHDL/lab/lab6/project6.vhd
+NGD file = project6_impl1.ngd
+-sdc option: SDC file input not used.
+-lpf option: Output file option is ON.
+Hardtimer checking is enabled (default). The -dt option is not used.
+The -r option is OFF. [ Remove LOC Properties is OFF. ]
+Technology check ok...
+
+Analyzing Verilog file C:/lscc/diamond/3.12/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
+Compile design.
+Compile Design Begin
+INFO - synthesis: The default VHDL library search path is now "C:/VHDL/lab/lab6/impl1". VHDL-1504
+Analyzing VHDL file c:/vhdl/lab/lab6/project6.vhd. VHDL-1481
+INFO - synthesis: c:/vhdl/lab/lab6/project6.vhd(8): analyzing entity main. VHDL-1012
+INFO - synthesis: c:/vhdl/lab/lab6/project6.vhd(24): analyzing architecture main_lab6. VHDL-1010
+unit main is not yet analyzed. VHDL-1485
+unit main is not yet analyzed. VHDL-1485
+c:/vhdl/lab/lab6/project6.vhd(8): executing main(main_lab6)
+
+WARNING - synthesis: c:/vhdl/lab/lab6/project6.vhd(171): key3 should be on the sensitivity list of the process. VHDL-1251
+WARNING - synthesis: c:/vhdl/lab/lab6/project6.vhd(175): incomplete sensitivity list specified, assuming completeness. VHDL-1613
+WARNING - synthesis: c:/vhdl/lab/lab6/project6.vhd(278): mode should be on the sensitivity list of the process. VHDL-1251
+WARNING - synthesis: c:/vhdl/lab/lab6/project6.vhd(281): incomplete sensitivity list specified, assuming completeness. VHDL-1613
+WARNING - synthesis: c:/vhdl/lab/lab6/project6.vhd(286): reset should be on the sensitivity list of the process. VHDL-1251
+INFO - synthesis: c:/vhdl/lab/lab6/project6.vhd(494): others clause is never selected. VHDL-1172
+WARNING - synthesis: c:/vhdl/lab/lab6/project6.vhd(497): incomplete sensitivity list specified, assuming completeness. VHDL-1613
+WARNING - synthesis: c:/vhdl/lab/lab6/project6.vhd(21): replacing existing netlist main(main_lab6). VHDL-1205
+Top module name (VHDL): main
+Loading NGL library 'C:/lscc/diamond/3.12/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.12/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.12/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.12/ispfpga/or5g00/data/orc5glib.ngl'...
+Loading device for application map from file 'xo2c4000.nph' in environment: C:/lscc/diamond/3.12/ispfpga.
+Package Status:                     Final          Version 1.44.
+Top-level module name = main.
+WARNING - synthesis: Bit 0 of Register t_decimal is stuck at Zero
+WARNING - synthesis: Bit 1 of Register t_decimal is stuck at Zero
+WARNING - synthesis: Bit 2 of Register t_decimal is stuck at Zero
+WARNING - synthesis: Bit 3 of Register t_decimal is stuck at Zero
+WARNING - synthesis: Bit 4 of Register t_decimal is stuck at Zero
+WARNING - synthesis: Bit 5 of Register t_decimal is stuck at Zero
+WARNING - synthesis: Bit 6 of Register t_decimal is stuck at Zero
+WARNING - synthesis: Bit 7 of Register t_decimal is stuck at Zero
+WARNING - synthesis: Bit 8 of Register t_decimal is stuck at Zero
+WARNING - synthesis: Bit 9 of Register t_decimal is stuck at Zero
+WARNING - synthesis: Bit 10 of Register t_decimal is stuck at Zero
+WARNING - synthesis: c:/vhdl/lab/lab6/project6.vhd(272): Register pm_i4 is stuck at Zero. VDB-5013
+
+
+
+WARNING - synthesis: c:/vhdl/lab/lab6/project6.vhd(272): Register pm_i2 is stuck at One. VDB-5014
+WARNING - synthesis: c:/vhdl/lab/lab6/project6.vhd(496): Register num_delay_i0_i26 is stuck at Zero. VDB-5013
+GSR instance connected to net key3_c.
+Duplicate register/latch removal. t_binary_i0_i0 is a one-to-one match with t_binary_rep_78__i0.
+Duplicate register/latch removal. data_wr_i0_i4 is a one-to-one match with data_wr_i0_i1.
+Duplicate register/latch removal. t_binary_i0_i1 is a one-to-one match with t_binary_rep_78__i1.
+Duplicate register/latch removal. t_binary_i0_i2 is a one-to-one match with t_binary_rep_78__i2.
+Duplicate register/latch removal. t_binary_i0_i3 is a one-to-one match with t_binary_rep_78__i3.
+Duplicate register/latch removal. t_binary_i0_i4 is a one-to-one match with t_binary_rep_78__i4.
+Duplicate register/latch removal. t_binary_i0_i5 is a one-to-one match with t_binary_rep_78__i5.
+Duplicate register/latch removal. t_binary_i0_i6 is a one-to-one match with t_binary_rep_78__i6.
+Duplicate register/latch removal. t_binary_i0_i7 is a one-to-one match with t_binary_rep_78__i7.
+Duplicate register/latch removal. t_binary_i0_i8 is a one-to-one match with t_binary_rep_78__i8.
+Duplicate register/latch removal. t_binary_i0_i9 is a one-to-one match with t_binary_rep_78__i9.
+Duplicate register/latch removal. t_binary_i0_i10 is a one-to-one match with t_binary_rep_78__i10.
+Duplicate register/latch removal. t_binary_i0_i11 is a one-to-one match with t_binary_rep_78__i11.
+Duplicate register/latch removal. t_binary_i0_i12 is a one-to-one match with t_binary_rep_78__i12.
+Duplicate register/latch removal. t_binary_i0_i13 is a one-to-one match with t_binary_rep_78__i13.
+Duplicate register/latch removal. t_binary_i0_i14 is a one-to-one match with t_binary_rep_78__i14.
+Duplicate register/latch removal. t_binary_i0_i15 is a one-to-one match with t_binary_rep_78__i15.
+Duplicate register/latch removal. data_wr_buffer_i0_i1 is a one-to-one match with data_wr_buffer_i0_i4.
+Duplicate register/latch removal. data_wr_i0_i4 is a one-to-one match with data_wr_i0_i5.
+Duplicate register/latch removal. data_wr_buffer_i0_i1 is a one-to-one match with data_wr_buffer_i0_i5.
+Applying 200.000000 MHz constraint to all clocks
+
+WARNING - synthesis: No user .sdc file.
+Results of NGD DRC are available in main_drc.log.
+Loading NGL library 'C:/lscc/diamond/3.12/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.12/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.12/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.12/ispfpga/or5g00/data/orc5glib.ngl'...
+All blocks are expanded and NGD expansion is successful.
+Writing NGD file project6_impl1.ngd.
+
+################### Begin Area Report (main)######################
+Number of register bits => 318 of 4635 (6 % )
+BB => 1
+CCU2D => 158
+FD1P3AX => 161
+FD1P3IX => 49
+FD1S3AX => 10
+FD1S3IX => 97
+FD1S3JX => 1
+GSR => 1
+IB => 4
+L6MUX21 => 5
+LUT4 => 788
+OB => 9
+PFUMX => 56
+################### End Area Report ##################
+
+################### Begin BlackBox Report ######################
+TSALL => 1
+################### End BlackBox Report ##################
+
+################### Begin Clock Report ######################
+Clock Nets
+Number of Clocks: 5
+  Net : clock_c, loads : 309
+  Net : clk_1us, loads : 13
+  Net : clk_100us, loads : 9
+  Net : clk_20ms, loads : 7
+  Net : clock_c_derived_1, loads : 4
+Clock Enable Nets
+Number of Clock Enables: 40
+Top 10 highest fanout Clock Enables:
+  Net : clock_c_enable_180, loads : 41
+  Net : clock_c_enable_113, loads : 32
+  Net : clock_c_enable_186, loads : 32
+  Net : clock_c_enable_143, loads : 22
+  Net : clock_c_enable_161, loads : 20
+  Net : clock_c_enable_120, loads : 8
+  Net : clock_c_enable_128, loads : 8
+  Net : clock_c_enable_185, loads : 5
+  Net : clock_c_enable_197, loads : 5
+  Net : clock_c_enable_183, loads : 5
+Highest fanout non-clock nets
+Top 10 highest fanout non-clock nets:
+  Net : STATE_2, loads : 146
+  Net : STATE_1, loads : 134
+  Net : STATE_0, loads : 60
+  Net : led1_c_1, loads : 43
+  Net : n11520, loads : 43
+  Net : clock_c_enable_180, loads : 41
+  Net : n2070, loads : 35
+  Net : n28407, loads : 33
+  Net : n28391, loads : 33
+  Net : n11534, loads : 32
+################### End Clock Report ##################
+
+Timing Report Summary
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk4 [get_nets clk_20ms]                |            -|            -|     0  
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk3 [get_nets clock_c_derived_1]       |            -|            -|     0  
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk2 [get_nets clk_1us]                 |            -|            -|     0  
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk1 [get_nets clk_100us]               |  200.000 MHz|  242.072 MHz|     2  
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk0 [get_nets clock_c]                 |  200.000 MHz|   16.102 MHz|    34 *
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+1 constraints not met.
+
+
+Peak Memory Usage: 218.129  MB
+
+--------------------------------------------------------------
+Elapsed CPU time for LSE flow : 22.516  secs
+--------------------------------------------------------------
