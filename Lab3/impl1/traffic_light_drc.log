@@ -1,0 +1,24 @@
+Results of NGD DRC are available in traffic_light_drc.log.
+Loading NGL library 'D:/diamond/diamond/3.12/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library 'D:/diamond/diamond/3.12/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'D:/diamond/diamond/3.12/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'D:/diamond/diamond/3.12/ispfpga/or5g00/data/orc5glib.ngl'...
+
+
+Running DRC...
+
+WARNING - synthesis: logical net 'column[3]' has no load.
+WARNING - synthesis: input pad net 'column[3]' has no legal load.
+WARNING - synthesis: logical net 'column[2]' has no load.
+WARNING - synthesis: input pad net 'column[2]' has no legal load.
+WARNING - synthesis: logical net 'column[1]' has no load.
+WARNING - synthesis: input pad net 'column[1]' has no legal load.
+WARNING - synthesis: logical net 'column[0]' has no load.
+WARNING - synthesis: input pad net 'column[0]' has no legal load.
+WARNING - synthesis: DRC complete with 8 warnings.
+
+Design Results:
+    855 blocks expanded
+completed the first expansion
+All blocks are expanded and NGD expansion is successful.
+Writing NGD file traffic_lights_impl1.ngd.

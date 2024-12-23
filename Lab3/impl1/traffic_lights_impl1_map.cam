@@ -1,0 +1,142 @@
+[ START MERGED ]
+n10749 menu_1
+clk_c_enable_187 baseboard_state_1
+[ END MERGED ]
+[ START CLIPPED ]
+VCC_net
+add_56_33/S1
+add_56_33/CO
+add_160_33/S1
+add_160_33/CO
+add_5273_18/S1
+add_5273_18/S0
+add_5273_20/S1
+add_5273_20/S0
+add_5273_22/S1
+add_5273_22/S0
+add_78_1/S0
+add_78_1/CI
+clk_output_cnt_i12_1209_add_4_1/S0
+clk_output_cnt_i12_1209_add_4_1/CI
+add_5273_24/S1
+add_5273_24/S0
+add_5273_26/S1
+add_5273_26/S0
+add_5273_28/S1
+add_5273_28/S0
+add_5273_30/S1
+add_5273_30/S0
+add_5273_32/S0
+add_5273_32/CO
+add_5272_2/S1
+add_5272_2/S0
+add_5272_2/CI
+add_5272_4/S1
+add_5272_4/S0
+add_5272_6/S1
+add_5272_6/S0
+add_5272_8/S1
+add_5272_8/S0
+clk_output_cnt_i12_1209_add_4_13/CO
+add_5272_10/S1
+add_5272_10/S0
+add_5272_12/S1
+add_5272_12/S0
+add_5272_14/S1
+add_5272_14/S0
+clk_1s_cnt_i22_1210_add_4_1/S0
+clk_1s_cnt_i22_1210_add_4_1/CI
+add_5272_16/S1
+add_5272_16/S0
+add_5272_18/S1
+add_5272_18/S0
+add_5272_20/S1
+add_5272_20/S0
+add_5272_22/S1
+add_5272_22/S0
+add_5272_24/S1
+add_5272_24/S0
+add_135_33/S1
+add_135_33/CO
+add_160_1/S0
+add_160_1/CI
+add_5272_26/S1
+add_5272_26/S0
+add_34_1/S0
+add_34_1/CI
+add_5272_28/S1
+add_5272_28/S0
+add_5272_30/S1
+add_5272_30/S0
+add_34_33/S1
+add_34_33/CO
+add_5272_32/S0
+add_5272_32/CO
+clk_1s_cnt_i22_1210_add_4_23/CO
+add_56_1/S0
+add_56_1/CI
+add_5273_2/S1
+add_5273_2/S0
+add_5273_2/CI
+add_5273_4/S1
+add_5273_4/S0
+add_5273_6/S1
+add_5273_6/S0
+add_5273_8/S1
+add_5273_8/S0
+add_78_33/S1
+add_78_33/CO
+add_135_1/S0
+add_135_1/CI
+add_5273_10/S1
+add_5273_10/S0
+add_5273_12/S1
+add_5273_12/S0
+add_5273_14/S1
+add_5273_14/S0
+add_5273_16/S1
+add_5273_16/S0
+[ END CLIPPED ]
+[ START DESIGN PREFS ]
+SCHEMATIC START ;
+# map:  version Diamond (64-bit) 3.12.0.240.2 -- WARNING: Map write only section -- Mon Nov 28 23:19:28 2022
+
+SYSCONFIG SDM_PORT=DISABLE SLAVE_SPI_PORT=DISABLE I2C_PORT=DISABLE MASTER_SPI_PORT=DISABLE COMPRESS_CONFIG=ON CONFIGURATION=CFG MY_ASSP=OFF ONE_TIME_PROGRAM=OFF CONFIG_SECURE=OFF MCCLK_FREQ=2.08 JTAG_PORT=ENABLE ENABLE_TRANSFR=DISABLE SHAREDEBRINIT=DISABLE MUX_CONFIGURATION_PORTS=DISABLE BACKGROUND_RECONFIG=OFF INBUF=ON ;
+LOCATE COMP "led1[1]" SITE "N2" ;
+LOCATE COMP "led1[2]" SITE "M2" ;
+LOCATE COMP "button[0]" SITE "L14" ;
+LOCATE COMP "button[1]" SITE "M13" ;
+LOCATE COMP "button[2]" SITE "M14" ;
+LOCATE COMP "button[3]" SITE "N14" ;
+LOCATE COMP "clk" SITE "C1" ;
+LOCATE COMP "data" SITE "G3" ;
+LOCATE COMP "sck" SITE "J2" ;
+LOCATE COMP "rck" SITE "H3" ;
+LOCATE COMP "select_right" SITE "A12" ;
+LOCATE COMP "select_left" SITE "C9" ;
+LOCATE COMP "display_right[0]" SITE "C12" ;
+LOCATE COMP "display_right[1]" SITE "B14" ;
+LOCATE COMP "display_right[2]" SITE "J1" ;
+LOCATE COMP "display_right[3]" SITE "H1" ;
+LOCATE COMP "display_right[4]" SITE "H2" ;
+LOCATE COMP "display_right[5]" SITE "B12" ;
+LOCATE COMP "display_right[6]" SITE "A11" ;
+LOCATE COMP "display_right[7]" SITE "K1" ;
+LOCATE COMP "display_left[0]" SITE "A10" ;
+LOCATE COMP "display_left[1]" SITE "C11" ;
+LOCATE COMP "display_left[2]" SITE "F2" ;
+LOCATE COMP "display_left[3]" SITE "E1" ;
+LOCATE COMP "display_left[4]" SITE "E2" ;
+LOCATE COMP "display_left[5]" SITE "A9" ;
+LOCATE COMP "display_left[6]" SITE "B9" ;
+LOCATE COMP "display_left[7]" SITE "F1" ;
+LOCATE COMP "row[0]" SITE "P7" ;
+LOCATE COMP "row[1]" SITE "N7" ;
+LOCATE COMP "row[2]" SITE "P8" ;
+LOCATE COMP "row[3]" SITE "N8" ;
+LOCATE COMP "led2[0]" SITE "P4" ;
+LOCATE COMP "led2[1]" SITE "N3" ;
+LOCATE COMP "led2[2]" SITE "M3" ;
+LOCATE COMP "led1[0]" SITE "P2" ;
+SCHEMATIC END ;
+[ END DESIGN PREFS ]

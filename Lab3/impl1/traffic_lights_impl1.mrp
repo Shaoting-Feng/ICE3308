@@ -1,0 +1,402 @@
+
+        Lattice Mapping Report File for Design Module 'traffic_light'
+
+
+Design Information
+------------------
+
+Command line:   map -a MachXO2 -p LCMXO2-4000HC -t CSBGA132 -s 5 -oc Commercial
+     traffic_lights_impl1.ngd -o traffic_lights_impl1_map.ncd -pr
+     traffic_lights_impl1.prf -mp traffic_lights_impl1.mrp -lpf
+     D:/diamond/project/Lab3/impl1/traffic_lights_impl1.lpf -lpf
+     D:/diamond/project/Lab3/traffic_lights.lpf -c 0 -gui -msgset
+     D:/diamond/project/Lab3/promote.xml 
+Target Vendor:  LATTICE
+Target Device:  LCMXO2-4000HCCSBGA132
+Target Performance:   5
+Mapper:  xo2c00,  version:  Diamond (64-bit) 3.12.0.240.2
+Mapped on:  11/28/22  23:19:27
+
+Design Summary
+--------------
+
+   Number of registers:    247 out of  4635 (5%)
+      PFU registers:          247 out of  4320 (6%)
+      PIO registers:            0 out of   315 (0%)
+   Number of SLICEs:       338 out of  2160 (16%)
+      SLICEs as Logic/ROM:    338 out of  2160 (16%)
+      SLICEs as RAM:            0 out of  1620 (0%)
+      SLICEs as Carry:        136 out of  2160 (6%)
+   Number of LUT4s:        675 out of  4320 (16%)
+      Number used as logic LUTs:        403
+      Number used as distributed RAM:     0
+      Number used as ripple logic:      272
+      Number used as shift registers:     0
+   Number of PIO sites used: 36 + 4(JTAG) out of 105 (38%)
+   Number of block RAMs:  0 out of 10 (0%)
+   Number of GSRs:        0 out of 1 (0%)
+   EFB used :        No
+   JTAG used :       No
+   Readback used :   No
+   Oscillator used : No
+   Startup used :    No
+   POR :             On
+   Bandgap :         On
+   Number of Power Controller:  0 out of 1 (0%)
+   Number of Dynamic Bank Controller (BCINRD):  0 out of 6 (0%)
+   Number of Dynamic Bank Controller (BCLVDSO):  0 out of 1 (0%)
+   Number of DCCA:  0 out of 8 (0%)
+   Number of DCMA:  0 out of 2 (0%)
+   Number of PLLs:  0 out of 2 (0%)
+   Number of DQSDLLs:  0 out of 2 (0%)
+   Number of CLKDIVC:  0 out of 4 (0%)
+   Number of ECLKSYNCA:  0 out of 4 (0%)
+   Number of ECLKBRIDGECS:  0 out of 2 (0%)
+   Notes:-
+      1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of
+     distributed RAMs) + 2*(Number of ripple logic)
+      2. Number of logic LUT4s does not include count of distributed RAM and
+     ripple logic.
+   Number of clocks:  2
+     Net clk_c: 139 loads, 139 rising, 0 falling (Driver: PIO clk )
+     Net clk_1s: 1 loads, 1 rising, 0 falling (Driver: clk_1s_243 )
+
+                                    Page 1
+
+
+
+
+Design:  traffic_light                                 Date:  11/28/22  23:19:27
+
+Design Summary (cont)
+---------------------
+   Number of Clock Enables:  17
+     Net clk_c_enable_184: 1 loads, 1 LSLICEs
+     Net clk_c_enable_137: 16 loads, 16 LSLICEs
+     Net clk_c_enable_106: 16 loads, 16 LSLICEs
+     Net clk_c_enable_39: 16 loads, 16 LSLICEs
+     Net clk_c_enable_145: 2 loads, 2 LSLICEs
+     Net baseboard_state_1: 17 loads, 17 LSLICEs
+     Net clk_c_enable_181: 1 loads, 1 LSLICEs
+     Net clk_c_enable_175: 2 loads, 2 LSLICEs
+     Net clk_c_enable_179: 1 loads, 1 LSLICEs
+     Net clk_c_enable_138: 1 loads, 1 LSLICEs
+     Net clk_c_enable_144: 11 loads, 11 LSLICEs
+     Net clk_output_N_889: 1 loads, 1 LSLICEs
+     Net clk_1s_enable_1: 1 loads, 1 LSLICEs
+     Net clk_c_enable_86: 1 loads, 1 LSLICEs
+     Net clk_c_enable_180: 16 loads, 16 LSLICEs
+     Net clk_c_enable_85: 1 loads, 1 LSLICEs
+     Net clk_c_enable_146: 1 loads, 1 LSLICEs
+   Number of LSRs:  7
+     Net menu_1: 1 loads, 1 LSLICEs
+     Net n7714: 2 loads, 2 LSLICEs
+     Net n6714: 2 loads, 2 LSLICEs
+     Net n6679: 1 loads, 1 LSLICEs
+     Net n7657: 1 loads, 1 LSLICEs
+     Net n6681: 18 loads, 18 LSLICEs
+     Net n6647: 17 loads, 17 LSLICEs
+   Number of nets driven by tri-state buffers:  0
+   Top 10 highest fanout non-clock nets:
+     Net menu_0: 52 loads
+     Net menu_1: 41 loads
+     Net n5952: 36 loads
+     Net n10730: 33 loads
+     Net n10746: 33 loads
+     Net n10056: 32 loads
+     Net n4054: 32 loads
+     Net n9969: 32 loads
+     Net baseboard_state_1: 27 loads
+     Net n22: 24 loads
+
+
+
+
+   Number of warnings:  8
+   Number of errors:    0
+     
+
+Design Errors/Warnings
+----------------------
+
+WARNING - map: input pad net 'column[3]' has no legal load.
+WARNING - map: input pad net 'column[2]' has no legal load.
+WARNING - map: input pad net 'column[1]' has no legal load.
+WARNING - map: input pad net 'column[0]' has no legal load.
+WARNING - map: IO buffer missing for top level port column[3:0](3)...logic will
+     be discarded.
+WARNING - map: IO buffer missing for top level port column[3:0](2)...logic will
+
+                                    Page 2
+
+
+
+
+Design:  traffic_light                                 Date:  11/28/22  23:19:27
+
+Design Errors/Warnings (cont)
+-----------------------------
+     be discarded.
+WARNING - map: IO buffer missing for top level port column[3:0](1)...logic will
+     be discarded.
+WARNING - map: IO buffer missing for top level port column[3:0](0)...logic will
+     be discarded.
+
+IO (PIO) Attributes
+-------------------
+
++---------------------+-----------+-----------+------------+
+| IO Name             | Direction | Levelmode | IO         |
+|                     |           |  IO_TYPE  | Register   |
++---------------------+-----------+-----------+------------+
+| led1[1]             | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| led1[2]             | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| button[0]           | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| button[1]           | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| button[2]           | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| button[3]           | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| clk                 | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| data                | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| sck                 | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| rck                 | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| select_right        | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| select_left         | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| display_right[0]    | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| display_right[1]    | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| display_right[2]    | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| display_right[3]    | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| display_right[4]    | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| display_right[5]    | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| display_right[6]    | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| display_right[7]    | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| display_left[0]     | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| display_left[1]     | OUTPUT    | LVCMOS25  |            |
+
+                                    Page 3
+
+
+
+
+Design:  traffic_light                                 Date:  11/28/22  23:19:27
+
+IO (PIO) Attributes (cont)
+--------------------------
++---------------------+-----------+-----------+------------+
+| display_left[2]     | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| display_left[3]     | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| display_left[4]     | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| display_left[5]     | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| display_left[6]     | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| display_left[7]     | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| row[0]              | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| row[1]              | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| row[2]              | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| row[3]              | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| led2[0]             | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| led2[1]             | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| led2[2]             | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| led1[0]             | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+
+Removed logic
+-------------
+
+Block i2 undriven or does not drive anything - clipped.
+Block GSR_INST undriven or does not drive anything - clipped.
+Signal clk_c_enable_187 was merged into signal baseboard_state_1
+Signal n10749 was merged into signal menu_1
+Signal VCC_net undriven or does not drive anything - clipped.
+Signal add_56_33/S1 undriven or does not drive anything - clipped.
+Signal add_56_33/CO undriven or does not drive anything - clipped.
+Signal add_160_33/S1 undriven or does not drive anything - clipped.
+Signal add_160_33/CO undriven or does not drive anything - clipped.
+Signal add_5273_18/S1 undriven or does not drive anything - clipped.
+Signal add_5273_18/S0 undriven or does not drive anything - clipped.
+Signal add_5273_20/S1 undriven or does not drive anything - clipped.
+Signal add_5273_20/S0 undriven or does not drive anything - clipped.
+Signal add_5273_22/S1 undriven or does not drive anything - clipped.
+Signal add_5273_22/S0 undriven or does not drive anything - clipped.
+Signal add_78_1/S0 undriven or does not drive anything - clipped.
+Signal add_78_1/CI undriven or does not drive anything - clipped.
+Signal clk_output_cnt_i12_1209_add_4_1/S0 undriven or does not drive anything -
+     clipped.
+Signal clk_output_cnt_i12_1209_add_4_1/CI undriven or does not drive anything -
+     clipped.
+Signal add_5273_24/S1 undriven or does not drive anything - clipped.
+Signal add_5273_24/S0 undriven or does not drive anything - clipped.
+
+                                    Page 4
+
+
+
+
+Design:  traffic_light                                 Date:  11/28/22  23:19:27
+
+Removed logic (cont)
+--------------------
+Signal add_5273_26/S1 undriven or does not drive anything - clipped.
+Signal add_5273_26/S0 undriven or does not drive anything - clipped.
+Signal add_5273_28/S1 undriven or does not drive anything - clipped.
+Signal add_5273_28/S0 undriven or does not drive anything - clipped.
+Signal add_5273_30/S1 undriven or does not drive anything - clipped.
+Signal add_5273_30/S0 undriven or does not drive anything - clipped.
+Signal add_5273_32/S0 undriven or does not drive anything - clipped.
+Signal add_5273_32/CO undriven or does not drive anything - clipped.
+Signal add_5272_2/S1 undriven or does not drive anything - clipped.
+Signal add_5272_2/S0 undriven or does not drive anything - clipped.
+Signal add_5272_2/CI undriven or does not drive anything - clipped.
+Signal add_5272_4/S1 undriven or does not drive anything - clipped.
+Signal add_5272_4/S0 undriven or does not drive anything - clipped.
+Signal add_5272_6/S1 undriven or does not drive anything - clipped.
+Signal add_5272_6/S0 undriven or does not drive anything - clipped.
+Signal add_5272_8/S1 undriven or does not drive anything - clipped.
+Signal add_5272_8/S0 undriven or does not drive anything - clipped.
+Signal clk_output_cnt_i12_1209_add_4_13/CO undriven or does not drive anything -
+     clipped.
+Signal add_5272_10/S1 undriven or does not drive anything - clipped.
+Signal add_5272_10/S0 undriven or does not drive anything - clipped.
+Signal add_5272_12/S1 undriven or does not drive anything - clipped.
+Signal add_5272_12/S0 undriven or does not drive anything - clipped.
+Signal add_5272_14/S1 undriven or does not drive anything - clipped.
+Signal add_5272_14/S0 undriven or does not drive anything - clipped.
+Signal clk_1s_cnt_i22_1210_add_4_1/S0 undriven or does not drive anything -
+     clipped.
+Signal clk_1s_cnt_i22_1210_add_4_1/CI undriven or does not drive anything -
+     clipped.
+Signal add_5272_16/S1 undriven or does not drive anything - clipped.
+Signal add_5272_16/S0 undriven or does not drive anything - clipped.
+Signal add_5272_18/S1 undriven or does not drive anything - clipped.
+Signal add_5272_18/S0 undriven or does not drive anything - clipped.
+Signal add_5272_20/S1 undriven or does not drive anything - clipped.
+Signal add_5272_20/S0 undriven or does not drive anything - clipped.
+Signal add_5272_22/S1 undriven or does not drive anything - clipped.
+Signal add_5272_22/S0 undriven or does not drive anything - clipped.
+Signal add_5272_24/S1 undriven or does not drive anything - clipped.
+Signal add_5272_24/S0 undriven or does not drive anything - clipped.
+Signal add_135_33/S1 undriven or does not drive anything - clipped.
+Signal add_135_33/CO undriven or does not drive anything - clipped.
+Signal add_160_1/S0 undriven or does not drive anything - clipped.
+Signal add_160_1/CI undriven or does not drive anything - clipped.
+Signal add_5272_26/S1 undriven or does not drive anything - clipped.
+Signal add_5272_26/S0 undriven or does not drive anything - clipped.
+Signal add_34_1/S0 undriven or does not drive anything - clipped.
+Signal add_34_1/CI undriven or does not drive anything - clipped.
+Signal add_5272_28/S1 undriven or does not drive anything - clipped.
+Signal add_5272_28/S0 undriven or does not drive anything - clipped.
+Signal add_5272_30/S1 undriven or does not drive anything - clipped.
+Signal add_5272_30/S0 undriven or does not drive anything - clipped.
+Signal add_34_33/S1 undriven or does not drive anything - clipped.
+Signal add_34_33/CO undriven or does not drive anything - clipped.
+Signal add_5272_32/S0 undriven or does not drive anything - clipped.
+Signal add_5272_32/CO undriven or does not drive anything - clipped.
+Signal clk_1s_cnt_i22_1210_add_4_23/CO undriven or does not drive anything -
+
+                                    Page 5
+
+
+
+
+Design:  traffic_light                                 Date:  11/28/22  23:19:27
+
+Removed logic (cont)
+--------------------
+     clipped.
+Signal add_56_1/S0 undriven or does not drive anything - clipped.
+Signal add_56_1/CI undriven or does not drive anything - clipped.
+Signal add_5273_2/S1 undriven or does not drive anything - clipped.
+Signal add_5273_2/S0 undriven or does not drive anything - clipped.
+Signal add_5273_2/CI undriven or does not drive anything - clipped.
+Signal add_5273_4/S1 undriven or does not drive anything - clipped.
+Signal add_5273_4/S0 undriven or does not drive anything - clipped.
+Signal add_5273_6/S1 undriven or does not drive anything - clipped.
+Signal add_5273_6/S0 undriven or does not drive anything - clipped.
+Signal add_5273_8/S1 undriven or does not drive anything - clipped.
+Signal add_5273_8/S0 undriven or does not drive anything - clipped.
+Signal add_78_33/S1 undriven or does not drive anything - clipped.
+Signal add_78_33/CO undriven or does not drive anything - clipped.
+Signal add_135_1/S0 undriven or does not drive anything - clipped.
+Signal add_135_1/CI undriven or does not drive anything - clipped.
+Signal add_5273_10/S1 undriven or does not drive anything - clipped.
+Signal add_5273_10/S0 undriven or does not drive anything - clipped.
+Signal add_5273_12/S1 undriven or does not drive anything - clipped.
+Signal add_5273_12/S0 undriven or does not drive anything - clipped.
+Signal add_5273_14/S1 undriven or does not drive anything - clipped.
+Signal add_5273_14/S0 undriven or does not drive anything - clipped.
+Signal add_5273_16/S1 undriven or does not drive anything - clipped.
+Signal add_5273_16/S0 undriven or does not drive anything - clipped.
+Block i1248_1_lut_rep_115 was optimized away.
+Block i3524_1_lut_rep_129 was optimized away.
+
+     
+
+Run Time and Memory Usage
+-------------------------
+
+   Total CPU Time: 0 secs  
+   Total REAL Time: 0 secs  
+   Peak Memory Usage: 54 MB
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    Page 6
+
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+     Copyright (c) 1995 AT&T Corp.   All rights reserved.
+     Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+     Copyright (c) 2001 Agere Systems   All rights reserved.
+     Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights
+     reserved.
