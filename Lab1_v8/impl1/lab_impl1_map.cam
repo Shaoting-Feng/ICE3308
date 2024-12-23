@@ -1,0 +1,129 @@
+[ START MERGED ]
+clk_c_enable_86 baseboard_state_1
+n12 button_record_0
+n16_adj_10 keyboard_output_0
+[ END MERGED ]
+[ START CLIPPED ]
+clk_output_cnt_i12_998_add_4_13/CO
+clk_input_cnt_i9_999_add_4_1/S0
+clk_input_cnt_i9_999_add_4_1/CI
+add_3530_30/S1
+add_3530_30/S0
+add_3529_10/S1
+add_3529_10/S0
+add_3530_32/S0
+add_3530_32/CO
+add_3529_12/S1
+add_3529_12/S0
+add_3529_14/S1
+add_3529_14/S0
+clk_input_cnt_i9_999_add_4_11/S1
+clk_input_cnt_i9_999_add_4_11/CO
+add_3529_16/S1
+add_3529_16/S0
+add_3530_2/S1
+add_3530_2/S0
+add_3530_2/CI
+add_3529_18/S1
+add_3529_18/S0
+add_3530_4/S1
+add_3530_4/S0
+add_3530_6/S1
+add_3530_6/S0
+add_3530_8/S1
+add_3530_8/S0
+add_3529_20/S1
+add_3529_20/S0
+add_3529_22/S1
+add_3529_22/S0
+add_3530_10/S1
+add_3530_10/S0
+add_3530_12/S1
+add_3530_12/S0
+add_3529_24/S1
+add_3529_24/S0
+add_3529_26/S1
+add_3529_26/S0
+add_3529_28/S1
+add_3529_28/S0
+add_3530_14/S1
+add_3530_14/S0
+add_3529_30/S1
+add_3529_30/S0
+add_3530_16/S1
+add_3530_16/S0
+add_3530_18/S1
+add_3530_18/S0
+add_3530_20/S1
+add_3530_20/S0
+add_3529_32/S0
+add_3529_32/CO
+add_3530_22/S1
+add_3530_22/S0
+clk_output_cnt_i12_998_add_4_1/S0
+clk_output_cnt_i12_998_add_4_1/CI
+add_115_33/S1
+add_115_33/CO
+add_130_1/S0
+add_130_1/CI
+add_130_33/S1
+add_130_33/CO
+add_3529_2/S1
+add_3529_2/S0
+add_3529_2/CI
+add_3529_4/S1
+add_3529_4/S0
+add_3529_6/S1
+add_3529_6/S0
+add_3529_8/S1
+add_3529_8/S0
+add_3530_24/S1
+add_3530_24/S0
+add_3530_26/S1
+add_3530_26/S0
+add_3530_28/S1
+add_3530_28/S0
+add_115_1/S0
+add_115_1/CI
+[ END CLIPPED ]
+[ START DESIGN PREFS ]
+SCHEMATIC START ;
+# map:  version Diamond (64-bit) 3.12.0.240.2 -- WARNING: Map write only section -- Fri Dec 02 18:07:11 2022
+
+SYSCONFIG SDM_PORT=DISABLE SLAVE_SPI_PORT=DISABLE I2C_PORT=DISABLE MASTER_SPI_PORT=DISABLE COMPRESS_CONFIG=ON CONFIGURATION=CFG MY_ASSP=OFF ONE_TIME_PROGRAM=OFF CONFIG_SECURE=OFF MCCLK_FREQ=2.08 JTAG_PORT=ENABLE ENABLE_TRANSFR=DISABLE SHAREDEBRINIT=DISABLE MUX_CONFIGURATION_PORTS=DISABLE BACKGROUND_RECONFIG=OFF INBUF=ON ;
+LOCATE COMP "row[2]" SITE "P8" ;
+LOCATE COMP "row[3]" SITE "N8" ;
+LOCATE COMP "button[0]" SITE "L14" ;
+LOCATE COMP "button[1]" SITE "M13" ;
+LOCATE COMP "button[2]" SITE "M14" ;
+LOCATE COMP "button[3]" SITE "N14" ;
+LOCATE COMP "column[0]" SITE "N6" ;
+LOCATE COMP "column[1]" SITE "P6" ;
+LOCATE COMP "column[2]" SITE "N5" ;
+LOCATE COMP "column[3]" SITE "L3" ;
+LOCATE COMP "clk" SITE "C1" ;
+LOCATE COMP "data" SITE "G3" ;
+LOCATE COMP "sck" SITE "J2" ;
+LOCATE COMP "rck" SITE "H3" ;
+LOCATE COMP "select_right" SITE "A12" ;
+LOCATE COMP "select_left" SITE "C9" ;
+LOCATE COMP "display_right[0]" SITE "C12" ;
+LOCATE COMP "display_right[1]" SITE "B14" ;
+LOCATE COMP "display_right[2]" SITE "J1" ;
+LOCATE COMP "display_right[3]" SITE "H1" ;
+LOCATE COMP "display_right[4]" SITE "H2" ;
+LOCATE COMP "display_right[5]" SITE "B12" ;
+LOCATE COMP "display_right[6]" SITE "A11" ;
+LOCATE COMP "display_right[7]" SITE "K1" ;
+LOCATE COMP "display_left[0]" SITE "A10" ;
+LOCATE COMP "display_left[1]" SITE "C11" ;
+LOCATE COMP "display_left[2]" SITE "F2" ;
+LOCATE COMP "display_left[3]" SITE "E1" ;
+LOCATE COMP "display_left[4]" SITE "E2" ;
+LOCATE COMP "display_left[5]" SITE "A9" ;
+LOCATE COMP "display_left[6]" SITE "B9" ;
+LOCATE COMP "display_left[7]" SITE "F1" ;
+LOCATE COMP "row[0]" SITE "P7" ;
+LOCATE COMP "row[1]" SITE "N7" ;
+SCHEMATIC END ;
+[ END DESIGN PREFS ]

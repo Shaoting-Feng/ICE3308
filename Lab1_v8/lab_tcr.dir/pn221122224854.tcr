@@ -1,0 +1,7 @@
+#Start recording tcl command: 11/22/2022 22:47:28
+#Project Location: D:/Common_File/Hardware/Lab1_v8; Project name: lab
+prj_project open "D:/Common_File/Hardware/Lab1_v8/lab.ldf"
+pgr_project open "D:/Common_File/Hardware/Lab1_v8/impl1/impl1.xcf"
+pgr_program run
+prj_project close
+#Stop recording: 11/22/2022 22:48:54

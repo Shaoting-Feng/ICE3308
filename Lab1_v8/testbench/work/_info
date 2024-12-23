@@ -1,0 +1,95 @@
+m255
+K4
+z2
+!s11e MIXED_VERSIONS
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/Common_File/Hardware/H05/DM
+Emain
+Z0 w1668772304
+Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z2 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 23
+Z3 dD:/Common_File/Hardware/Lab1_v6/testbench
+Z4 8D:\Common_File\Hardware\Lab1_v6\testbench\main.vhd
+Z5 FD:\Common_File\Hardware\Lab1_v6\testbench\main.vhd
+l0
+L4 1
+VCd9dG=ni_P_cCiTEQ_ea:0
+!s100 B5z:5AZNR4dFlAk9`5gP>1
+Z6 OT;C;2020.3;71
+32
+Z7 !s110 1668772308
+!i10b 1
+Z8 !s108 1668772308.000000
+Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:\Common_File\Hardware\Lab1_v6\testbench\main.vhd|
+Z10 !s107 D:\Common_File\Hardware\Lab1_v6\testbench\main.vhd|
+!i113 1
+Z11 o-work work -2002 -explicit -O0
+Z12 tExplicit 1 CvgOpt 0
+Amain_arch
+R1
+R2
+Z13 DEx4 work 4 main 0 22 Cd9dG=ni_P_cCiTEQ_ea:0
+!i122 23
+l42
+Z14 L18 132
+V[K;I>]BPocAIJWNzEg?co3
+!s100 VhRnSRF9Nn2Q9QfUOl`U^2
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Etb
+Z15 w1668771662
+Z16 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+R1
+R2
+!i122 22
+R3
+Z17 8D:/Common_File/Hardware/Lab1_v6/testbench/tb.vhd
+Z18 FD:/Common_File/Hardware/Lab1_v6/testbench/tb.vhd
+l0
+L8 1
+VYXKQbBVEPan4TSUmAVaT`0
+!s100 7^MW[J7?>H@e=O94_22XN0
+R6
+32
+R7
+!i10b 1
+R8
+Z19 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Common_File/Hardware/Lab1_v6/testbench/tb.vhd|
+Z20 !s107 D:/Common_File/Hardware/Lab1_v6/testbench/tb.vhd|
+!i113 1
+R11
+R12
+Aarch
+R16
+R1
+R2
+DEx4 work 2 tb 0 22 YXKQbBVEPan4TSUmAVaT`0
+!i122 22
+l29
+L11 66
+VZCjQn1ozVICHNFhO]^znC1
+!s100 6zW:GVWh[Lk?J6RXa8;co3
+R6
+32
+R7
+!i10b 1
+R8
+R19
+R20
+!i113 1
+R11
+R12

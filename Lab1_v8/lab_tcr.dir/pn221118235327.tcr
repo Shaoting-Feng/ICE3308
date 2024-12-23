@@ -1,0 +1,7 @@
+#Start recording tcl command: 11/18/2022 23:52:30
+#Project Location: D:/Common_File/Hardware/Lab1_v8; Project name: lab
+prj_project open "D:/Common_File/Hardware/Lab1_v8/lab.ldf"
+prj_run Export -impl impl1 -task Jedecgen
+prj_run Export -impl impl1 -task Jedecgen
+prj_project close
+#Stop recording: 11/18/2022 23:53:27
