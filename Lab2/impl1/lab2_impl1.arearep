@@ -1,0 +1,22 @@
+----------------------------------------------------------------------
+Report for cell main.TECH
+Register bits:  235 of 4635 (5.070%)
+I/O cells:      9
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D       383          100.0
+                            FD1P3AX        19          100.0
+                            FD1P3AY         8          100.0
+                            FD1P3IX       102          100.0
+                            FD1P3JX        11          100.0
+                            FD1S3AX        24          100.0
+                            FD1S3AY         4          100.0
+                            FD1S3IX        66          100.0
+                            FD1S3JX         1          100.0
+                                GSR         1          100.0
+                                 IB         5          100.0
+                            L6MUX21         2          100.0
+                               LUT4       296          100.0
+                                 OB         4          100.0
+                              PFUMX        27          100.0
+                              TOTAL       953

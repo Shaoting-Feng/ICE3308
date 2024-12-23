@@ -1,0 +1,248 @@
+PAR: Place And Route Diamond (64-bit) 3.12.0.240.2.
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
+Fri Dec 02 18:11:07 2022
+
+D:/Diamond/Install/diamond/3.12/ispfpga\bin\nt64\par -f lab2_impl1.p2t
+lab2_impl1_map.ncd lab2_impl1.dir lab2_impl1.prf -gui -msgset
+D:/Common_File/Hardware/Lab2/promote.xml
+
+
+Preference file: lab2_impl1.prf.
+
+Level/       Number       Worst        Timing       Worst        Timing       Run          NCD
+Cost [ncd]   Unrouted     Slack        Score        Slack(hold)  Score(hold)  Time         Status
+----------   --------     -----        ------       -----------  -----------  ----         ------
+5_1   *      0            -            -            -            -            06           Completed
+
+* : Design saved.
+
+Total (real) run time for 1-seed: 6 secs 
+
+par done!
+
+Note: user must run 'Trace' for timing closure signoff.
+
+Lattice Place and Route Report for Design "lab2_impl1_map.ncd"
+Fri Dec 02 18:11:07 2022
+
+PAR: Place And Route Diamond (64-bit) 3.12.0.240.2.
+Command Line: par -w -l 5 -i 6 -t 1 -c 0 -e 0 -gui -msgset D:/Common_File/Hardware/Lab2/promote.xml -exp parUseNBR=1:parCDP=0:parCDR=0:parPathBased=OFF:parASE=1 lab2_impl1_map.ncd lab2_impl1.dir/5_1.ncd lab2_impl1.prf
+Preference file: lab2_impl1.prf.
+Placement level-cost: 5-1.
+Routing Iterations: 6
+
+Loading design for application par from file lab2_impl1_map.ncd.
+Design name: main
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: 5
+Loading device for application par from file 'xo2c4000.nph' in environment: D:/Diamond/Install/diamond/3.12/ispfpga.
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+License checked out.
+
+
+Ignore Preference Error(s):  True
+Device utilization summary:
+
+   PIO (prelim)    9+4(JTAG)/280     5% used
+                   9+4(JTAG)/105     12% bonded
+
+   SLICE            534/2160         24% used
+
+
+
+Number of Signals: 1310
+Number of Connections: 3423
+
+Pin Constraint Summary:
+   9 out of 9 pins locked (100% locked).
+
+The following 2 signals are selected to use the primary clock routing resources:
+    clk_c (driver: clk, clk load #: 119)
+    clk_input (driver: SLICE_390, clk load #: 17)
+
+WARNING - par: Signal "clk_c" is selected to use Primary clock resources. However, its driver comp "clk" is located at "C1", which is not a dedicated pin for connecting to Primary clock resources. General routing has to be used to route this signal, and it might suffer from excessive delay or skew.
+
+The following 8 signals are selected to use the secondary clock routing resources:
+    n14757 (driver: SLICE_464, clk load #: 0, sr load #: 28, ce load #: 0)
+    baseboard_state_1 (driver: SLICE_383, clk load #: 0, sr load #: 0, ce load #: 17)
+    n10959 (driver: SLICE_516, clk load #: 0, sr load #: 17, ce load #: 0)
+    n10920 (driver: SLICE_522, clk load #: 0, sr load #: 17, ce load #: 0)
+    saw_cnt_31__N_507 (driver: SLICE_127, clk load #: 0, sr load #: 17, ce load #: 0)
+    clk_c_enable_52 (driver: SLICE_480, clk load #: 0, sr load #: 0, ce load #: 17)
+    clk_c_enable_100 (driver: SLICE_516, clk load #: 0, sr load #: 0, ce load #: 16)
+    clk_c_enable_106 (driver: SLICE_490, clk load #: 0, sr load #: 0, ce load #: 10)
+
+No signal is selected as Global Set/Reset.
+Starting Placer Phase 0.
+...........
+Finished Placer Phase 0.  REAL time: 0 secs 
+
+Starting Placer Phase 1.
+....................
+Placer score = 170780.
+Finished Placer Phase 1.  REAL time: 4 secs 
+
+Starting Placer Phase 2.
+.
+Placer score =  168770
+Finished Placer Phase 2.  REAL time: 4 secs 
+
+
+------------------ Clock Report ------------------
+
+Global Clock Resources:
+  CLK_PIN    : 0 out of 8 (0%)
+  General PIO: 1 out of 280 (0%)
+  PLL        : 0 out of 2 (0%)
+  DCM        : 0 out of 2 (0%)
+  DCC        : 0 out of 8 (0%)
+
+Global Clocks:
+  PRIMARY "clk_c" from comp "clk" on PIO site "C1 (PL4A)", clk load = 119
+  PRIMARY "clk_input" from Q0 on comp "SLICE_390" on site "R2C16B", clk load = 17
+  SECONDARY "n14757" from F0 on comp "SLICE_464" on site "R12C17D", clk load = 0, ce load = 0, sr load = 28
+  SECONDARY "baseboard_state_1" from Q1 on comp "SLICE_383" on site "R12C17A", clk load = 0, ce load = 17, sr load = 0
+  SECONDARY "n10959" from F1 on comp "SLICE_516" on site "R12C15C", clk load = 0, ce load = 0, sr load = 17
+  SECONDARY "n10920" from F0 on comp "SLICE_522" on site "R12C17B", clk load = 0, ce load = 0, sr load = 17
+  SECONDARY "saw_cnt_31__N_507" from F0 on comp "SLICE_127" on site "R20C21D", clk load = 0, ce load = 0, sr load = 17
+  SECONDARY "clk_c_enable_52" from F1 on comp "SLICE_480" on site "R12C15A", clk load = 0, ce load = 17, sr load = 0
+  SECONDARY "clk_c_enable_100" from F0 on comp "SLICE_516" on site "R12C15C", clk load = 0, ce load = 16, sr load = 0
+  SECONDARY "clk_c_enable_106" from F1 on comp "SLICE_490" on site "R12C17C", clk load = 0, ce load = 10, sr load = 0
+
+  PRIMARY  : 2 out of 8 (25%)
+  SECONDARY: 8 out of 8 (100%)
+
+Edge Clocks:
+  No edge clock selected.
+
+--------------- End of Clock Report ---------------
+
+
+I/O Usage Summary (final):
+   9 + 4(JTAG) out of 280 (4.6%) PIO sites used.
+   9 + 4(JTAG) out of 105 (12.4%) bonded PIO sites used.
+   Number of PIO comps: 9; differential: 0.
+   Number of Vref pins used: 0.
+
+I/O Bank Usage Summary:
++----------+---------------+------------+-----------+
+| I/O Bank | Usage         | Bank Vccio | Bank Vref |
++----------+---------------+------------+-----------+
+| 0        | 0 / 26 (  0%) | -          | -         |
+| 1        | 4 / 26 ( 15%) | 2.5V       | -         |
+| 2        | 1 / 28 (  3%) | 2.5V       | -         |
+| 3        | 0 / 7 (  0%)  | -          | -         |
+| 4        | 3 / 8 ( 37%)  | 2.5V       | -         |
+| 5        | 1 / 10 ( 10%) | 2.5V       | -         |
++----------+---------------+------------+-----------+
+
+Total placer CPU time: 3 secs 
+
+Dumping design to file lab2_impl1.dir/5_1.ncd.
+
+
+-----------------------------------------------------------------
+INFO - par: ASE feature is off due to non timing-driven settings.  
+-----------------------------------------------------------------
+
+0 connections routed; 3423 unrouted.
+Starting router resource preassignment
+
+Completed router resource preassignment. Real time: 5 secs 
+
+Start NBR router at 18:11:12 12/02/22
+
+*****************************************************************
+Info: NBR allows conflicts(one node used by more than one signal)
+      in the earlier iterations. In each iteration, it tries to  
+      solve the conflicts while keeping the critical connections 
+      routed as short as possible. The routing process is said to
+      be completed when no conflicts exist and all connections   
+      are routed.                                                
+Note: NBR uses a different method to calculate timing slacks. The
+      worst slack and total negative slack may not be the same as
+      that in TRCE report. You should always run TRCE to verify  
+      your design.                                               
+*****************************************************************
+
+Start NBR special constraint process at 18:11:12 12/02/22
+
+Start NBR section for initial routing at 18:11:12 12/02/22
+Level 4, iteration 1
+114(0.05%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 5 secs 
+
+Info: Initial congestion level at 75% usage is 0
+Info: Initial congestion area  at 75% usage is 0 (0.00%)
+
+Start NBR section for normal routing at 18:11:12 12/02/22
+Level 4, iteration 1
+53(0.02%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 6 secs 
+Level 4, iteration 2
+14(0.01%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 6 secs 
+Level 4, iteration 3
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; real time: 6 secs 
+Level 4, iteration 4
+0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; real time: 6 secs 
+
+Start NBR section for re-routing at 18:11:13 12/02/22
+Level 4, iteration 1
+0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; real time: 6 secs 
+
+Start NBR section for post-routing at 18:11:13 12/02/22
+
+End NBR router with 0 unrouted connection
+
+NBR Summary
+-----------
+  Number of unrouted connections : 0 (0.00%)
+  Number of connections with timing violations : 0 (0.00%)
+  Estimated worst slack<setup> : <n/a>
+  Timing score<setup> : 0
+-----------
+Notes: The timing info is calculated for SETUP only and all PAR_ADJs are ignored.
+
+
+
+Total CPU time 5 secs 
+Total REAL time: 6 secs 
+Completely routed.
+End of route.  3423 routed (100.00%); 0 unrouted.
+
+Hold time timing score: 0, hold timing errors: 0
+
+Timing score: 0 
+
+Dumping design to file lab2_impl1.dir/5_1.ncd.
+
+
+All signals are completely routed.
+
+
+PAR_SUMMARY::Run status = Completed
+PAR_SUMMARY::Number of unrouted conns = 0
+PAR_SUMMARY::Worst  slack<setup/<ns>> = <n/a>
+PAR_SUMMARY::Timing score<setup/<ns>> = <n/a>
+PAR_SUMMARY::Worst  slack<hold /<ns>> = <n/a>
+PAR_SUMMARY::Timing score<hold /<ns>> = <n/a>
+PAR_SUMMARY::Number of errors = 0
+
+Total CPU  time to completion: 6 secs 
+Total REAL time to completion: 6 secs 
+
+par done!
+
+Note: user must run 'Trace' for timing closure signoff.
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.

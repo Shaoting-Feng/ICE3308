@@ -1,0 +1,312 @@
+<HTML>
+<HEAD><TITLE>Synthesis and Ngdbuild Report</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="Syn"></A><B><U><big>Synthesis and Ngdbuild  Report</big></U></B>
+synthesis:  version Diamond (64-bit) 3.12.0.240.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
+Fri Dec 02 18:11:03 2022
+
+
+Command Line:  synthesis -f lab2_impl1_lattice.synproj -gui -msgset D:/Common_File/Hardware/Lab2/promote.xml 
+
+Synthesis options:
+The -a option is MachXO2.
+The -s option is 5.
+The -t option is CSBGA132.
+The -d option is LCMXO2-4000HC.
+Using package CSBGA132.
+Using performance grade 5.
+                                                          
+
+##########################################################
+
+### Lattice Family : MachXO2
+
+### Device  : LCMXO2-4000HC
+
+### Package : CSBGA132
+
+### Speed   : 5
+
+##########################################################
+
+                                                          
+
+INFO - synthesis: User-Selected Strategy Settings
+Optimization goal = Balanced
+Top-level module name = main.
+Target frequency = 200.000000 MHz.
+Maximum fanout = 1000.
+Timing path count = 3
+BRAM utilization = 100.000000 %
+DSP usage = true
+DSP utilization = 100.000000 %
+fsm_encoding_style = auto
+resolve_mixed_drivers = 0
+fix_gated_clocks = 1
+
+Mux style = Auto
+Use Carry Chain = true
+carry_chain_length = 0
+Loop Limit = 1950.
+Use IO Insertion = TRUE
+Use IO Reg = AUTO
+
+Resource Sharing = TRUE
+Propagate Constants = TRUE
+Remove Duplicate Registers = TRUE
+force_gsr = auto
+ROM style = auto
+RAM style = auto
+The -comp option is FALSE.
+The -syn option is FALSE.
+-p D:/Diamond/Install/diamond/3.12/ispfpga/xo2c00/data (searchpath added)
+-p D:/Common_File/Hardware/Lab2/impl1 (searchpath added)
+-p D:/Common_File/Hardware/Lab2 (searchpath added)
+VHDL library = work
+VHDL design file = D:/Common_File/Hardware/Lab2/impl1/source/main.vhd
+NGD file = lab2_impl1.ngd
+-sdc option: SDC file input not used.
+-lpf option: Output file option is ON.
+Hardtimer checking is enabled (default). The -dt option is not used.
+The -r option is OFF. [ Remove LOC Properties is OFF. ]
+Technology check ok...
+
+Analyzing Verilog file D:/Diamond/Install/diamond/3.12/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
+Compile design.
+Compile Design Begin
+INFO - synthesis: The default VHDL library search path is now "D:/Common_File/Hardware/Lab2/impl1". VHDL-1504
+Analyzing VHDL file d:/common_file/hardware/lab2/impl1/source/main.vhd. VHDL-1481
+INFO - synthesis: d:/common_file/hardware/lab2/impl1/source/main.vhd(5): analyzing entity main. VHDL-1012
+INFO - synthesis: d:/common_file/hardware/lab2/impl1/source/main.vhd(16): analyzing architecture main_arch. VHDL-1010
+unit main is not yet analyzed. VHDL-1485
+unit main is not yet analyzed. VHDL-1485
+d:/common_file/hardware/lab2/impl1/source/main.vhd(5): executing main(main_arch)
+
+WARNING - synthesis: d:/common_file/hardware/lab2/impl1/source/main.vhd(139): tri_cnt should be on the sensitivity list of the process. VHDL-1251
+WARNING - synthesis: d:/common_file/hardware/lab2/impl1/source/main.vhd(139): saw_cnt should be on the sensitivity list of the process. VHDL-1251
+WARNING - synthesis: d:/common_file/hardware/lab2/impl1/source/main.vhd(144): incomplete sensitivity list specified, assuming completeness. VHDL-1613
+WARNING - synthesis: d:/common_file/hardware/lab2/impl1/source/main.vhd(14): replacing existing netlist main(main_arch). VHDL-1205
+Top module name (VHDL): main
+Loading NGL library 'D:/Diamond/Install/diamond/3.12/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library 'D:/Diamond/Install/diamond/3.12/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'D:/Diamond/Install/diamond/3.12/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'D:/Diamond/Install/diamond/3.12/ispfpga/or5g00/data/orc5glib.ngl'...
+Loading device for application map from file 'xo2c4000.nph' in environment: D:/Diamond/Install/diamond/3.12/ispfpga.
+Package Status:                     Final          Version 1.44.
+Top-level module name = main.
+######## Converting I/O port rck to output.
+######## Converting I/O port sck to output.
+######## Converting I/O port data to output.
+
+
+
+WARNING - synthesis: Bit 0 of Register data_reg is stuck at Zero
+WARNING - synthesis: Bit 8 of Register data_reg is stuck at One
+WARNING - synthesis: Bit 9 of Register data_reg is stuck at One
+WARNING - synthesis: Bit 0 of Register baseboard_state is stuck at Zero
+WARNING - synthesis: Bit 1 of Register baseboard_state is stuck at Zero
+WARNING - synthesis: Bit 2 of Register baseboard_state is stuck at Zero
+WARNING - synthesis: Bit 3 of Register baseboard_state is stuck at Zero
+WARNING - synthesis: Bit 4 of Register baseboard_state is stuck at Zero
+WARNING - synthesis: Bit 5 of Register baseboard_state is stuck at Zero
+WARNING - synthesis: Bit 6 of Register baseboard_state is stuck at Zero
+WARNING - synthesis: Bit 7 of Register baseboard_state is stuck at Zero
+WARNING - synthesis: Bit 8 of Register baseboard_state is stuck at Zero
+WARNING - synthesis: Bit 9 of Register baseboard_state is stuck at Zero
+WARNING - synthesis: Bit 10 of Register baseboard_state is stuck at Zero
+WARNING - synthesis: Bit 11 of Register baseboard_state is stuck at Zero
+WARNING - synthesis: Bit 12 of Register baseboard_state is stuck at Zero
+WARNING - synthesis: Bit 13 of Register baseboard_state is stuck at Zero
+WARNING - synthesis: Bit 14 of Register baseboard_state is stuck at Zero
+WARNING - synthesis: Bit 15 of Register baseboard_state is stuck at Zero
+WARNING - synthesis: Bit 16 of Register baseboard_state is stuck at Zero
+WARNING - synthesis: Bit 17 of Register baseboard_state is stuck at Zero
+WARNING - synthesis: Bit 18 of Register baseboard_state is stuck at Zero
+WARNING - synthesis: Bit 19 of Register baseboard_state is stuck at Zero
+WARNING - synthesis: Bit 20 of Register baseboard_state is stuck at Zero
+WARNING - synthesis: Bit 21 of Register baseboard_state is stuck at Zero
+WARNING - synthesis: Bit 22 of Register baseboard_state is stuck at Zero
+WARNING - synthesis: Bit 23 of Register baseboard_state is stuck at Zero
+WARNING - synthesis: Bit 24 of Register baseboard_state is stuck at Zero
+WARNING - synthesis: Bit 25 of Register baseboard_state is stuck at Zero
+WARNING - synthesis: Bit 26 of Register baseboard_state is stuck at Zero
+WARNING - synthesis: Bit 27 of Register baseboard_state is stuck at Zero
+WARNING - synthesis: Bit 28 of Register baseboard_state is stuck at Zero
+WARNING - synthesis: Bit 29 of Register baseboard_state is stuck at Zero
+WARNING - synthesis: d:/common_file/hardware/lab2/impl1/source/main.vhd(197): Register r2_i0 is stuck at Zero. VDB-5013
+WARNING - synthesis: d:/common_file/hardware/lab2/impl1/source/main.vhd(133): Register flag_i1 is stuck at Zero. VDB-5013
+GSR will not be inferred because no asynchronous signal was found in the netlist.
+WARNING - synthesis: Initial value found on instance select_segment_i0 will be ignored.
+WARNING - synthesis: Initial value found on instance speed_i1 will be ignored.
+WARNING - synthesis: Initial value found on instance duty_i1 will be ignored.
+WARNING - synthesis: Initial value found on instance duty_i2 will be ignored.
+WARNING - synthesis: Initial value found on instance clk_input_290 will be ignored.
+WARNING - synthesis: Initial value found on instance clk_output_292 will be ignored.
+Duplicate register/latch removal. r3_i0 is a one-to-one match with r2_i3.
+Duplicate register/latch removal. r4_i0 is a one-to-one match with r3_i2.
+Duplicate register/latch removal. r5_i0 is a one-to-one match with menu_279.
+Duplicate register/latch removal. r2_i2 is a one-to-one match with r5_i0.
+Duplicate register/latch removal. r3_i1 is a one-to-one match with r3_i0.
+Duplicate register/latch removal. r3_i3 is a one-to-one match with r2_i2.
+Duplicate register/latch removal. r4_i1 is a one-to-one match with r3_i1.
+Duplicate register/latch removal. r4_i2 is a one-to-one match with r4_i0.
+Duplicate register/latch removal. r4_i3 is a one-to-one match with r3_i3.
+Duplicate register/latch removal. r5_i1 is a one-to-one match with r4_i2.
+Duplicate register/latch removal. r5_i2 is a one-to-one match with r5_i1.
+Duplicate register/latch removal. r5_i3 is a one-to-one match with r4_i3.
+Applying 200.000000 MHz constraint to all clocks
+
+WARNING - synthesis: No user .sdc file.
+Results of NGD DRC are available in main_drc.log.
+Loading NGL library 'D:/Diamond/Install/diamond/3.12/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library 'D:/Diamond/Install/diamond/3.12/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'D:/Diamond/Install/diamond/3.12/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'D:/Diamond/Install/diamond/3.12/ispfpga/or5g00/data/orc5glib.ngl'...
+All blocks are expanded and NGD expansion is successful.
+Writing NGD file lab2_impl1.ngd.
+
+################### Begin Area Report (main)######################
+Number of register bits => 235 of 4635 (5 % )
+CCU2D => 383
+FD1P3AX => 19
+FD1P3AY => 8
+FD1P3IX => 102
+FD1P3JX => 11
+FD1S3AX => 24
+FD1S3AY => 4
+FD1S3IX => 66
+FD1S3JX => 1
+GSR => 1
+IB => 5
+L6MUX21 => 2
+LUT4 => 296
+OB => 4
+PFUMX => 27
+################### End Area Report ##################
+
+################### Begin BlackBox Report ######################
+TSALL => 1
+################### End BlackBox Report ##################
+
+################### Begin Clock Report ######################
+Clock Nets
+Number of Clocks: 2
+  Net : clk_c, loads : 211
+  Net : clk_input, loads : 24
+Clock Enable Nets
+Number of Clock Enables: 19
+Top 10 highest fanout Clock Enables:
+  Net : clk_c_enable_121, loads : 32
+  Net : clk_c_enable_100, loads : 32
+  Net : clk_c_enable_52, loads : 31
+  Net : clk_c_enable_106, loads : 13
+  Net : clk_input_enable_17, loads : 7
+  Net : clk_input_enable_12, loads : 4
+  Net : clk_input_enable_5, loads : 4
+  Net : clk_c_enable_14, loads : 3
+  Net : clk_input_enable_14, loads : 3
+  Net : clk_input_enable_16, loads : 3
+Highest fanout non-clock nets
+Top 10 highest fanout non-clock nets:
+  Net : duty_2, loads : 71
+  Net : duty_1, loads : 51
+  Net : duty_0, loads : 51
+  Net : n14757, loads : 50
+  Net : speed_1, loads : 45
+  Net : speed_0, loads : 40
+  Net : speed_2, loads : 39
+  Net : flag_0, loads : 34
+  Net : n187, loads : 34
+  Net : n14425, loads : 33
+################### End Clock Report ##################
+
+<A name="lse_trs"></A><B><U><big>Timing Report Summary</big></U></B>
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk1 [get_nets clk_c]                   |  200.000 MHz|   73.823 MHz|    36 *
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk0 [get_nets clk_input]               |  200.000 MHz|  116.320 MHz|     6 *
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+2 constraints not met.
+
+
+Peak Memory Usage: 105.855  MB
+
+--------------------------------------------------------------
+Elapsed CPU time for LSE flow : 2.344  secs
+--------------------------------------------------------------
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

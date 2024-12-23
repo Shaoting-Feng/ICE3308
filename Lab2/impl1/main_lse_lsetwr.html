@@ -1,0 +1,646 @@
+<HTML>
+<HEAD><TITLE>Lattice Synthesis Timing Report</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="Map_Twr"></A><B><U><big>Lattice Synthesis Timing Report</big></U></B>
+--------------------------------------------------------------------------------
+Lattice Synthesis Timing Report, Version  
+Fri Dec 02 18:11:06 2022
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
+
+<A name="mtw1_ri"></A><B><U><big>Report Information</big></U></B>
+------------------
+Design:     main
+Constraint file:  
+Report level:    verbose report, limited to 3 items per constraint
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Constraint: create_clock -period 5.000000 -name clk1 [get_nets clk_c]
+            4096 items scored, 4096 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Error:  The following path violates requirements by 8.546ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3JX    CK             tri_cnt_1647__i0  (from clk_c +)
+   Destination:    FD1P3IX    D              tri_cnt_1647__i31  (to clk_c +)
+
+   Delay:                  13.400ns  (58.2% logic, 41.8% route), 36 logic levels.
+
+ Constraint Details:
+
+     13.400ns data_path tri_cnt_1647__i0 to tri_cnt_1647__i31 violates
+      5.000ns delay constraint less
+      0.146ns L_S requirement (totaling 4.854ns) by 8.546ns
+
+ Path Details: tri_cnt_1647__i0 to tri_cnt_1647__i31
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.403             CK to Q              tri_cnt_1647__i0 (from clk_c)
+Route         5   e 1.222                                  tri_cnt[0]
+A1_TO_FCO   ---     0.752           A[2] to COUT           sub_1326_add_2_rep_19_1
+Route         1   e 0.020                                  n13359
+FCI_TO_FCO  ---     0.143            CIN to COUT           sub_1326_add_2_rep_19_3
+Route         1   e 0.020                                  n13360
+FCI_TO_FCO  ---     0.143            CIN to COUT           sub_1326_add_2_rep_19_5
+Route         1   e 0.020                                  n13361
+FCI_TO_FCO  ---     0.143            CIN to COUT           sub_1326_add_2_rep_19_7
+Route         1   e 0.020                                  n13362
+FCI_TO_FCO  ---     0.143            CIN to COUT           sub_1326_add_2_rep_19_9
+Route         1   e 0.020                                  n13363
+FCI_TO_FCO  ---     0.143            CIN to COUT           sub_1326_add_2_rep_19_11
+Route         1   e 0.020                                  n13364
+FCI_TO_FCO  ---     0.143            CIN to COUT           sub_1326_add_2_rep_19_13
+Route         1   e 0.020                                  n13365
+FCI_TO_FCO  ---     0.143            CIN to COUT           sub_1326_add_2_rep_19_15
+Route         1   e 0.020                                  n13366
+FCI_TO_FCO  ---     0.143            CIN to COUT           sub_1326_add_2_rep_19_17
+Route         1   e 0.020                                  n13367
+FCI_TO_FCO  ---     0.143            CIN to COUT           sub_1326_add_2_rep_19_19
+Route         1   e 0.020                                  n13368
+FCI_TO_FCO  ---     0.143            CIN to COUT           sub_1326_add_2_rep_19_21
+Route         1   e 0.020                                  n13369
+FCI_TO_FCO  ---     0.143            CIN to COUT           sub_1326_add_2_rep_19_23
+Route         1   e 0.020                                  n13370
+FCI_TO_FCO  ---     0.143            CIN to COUT           sub_1326_add_2_rep_19_25
+Route         1   e 0.020                                  n13371
+FCI_TO_FCO  ---     0.143            CIN to COUT           sub_1326_add_2_rep_19_27
+Route         1   e 0.020                                  n13372
+FCI_TO_FCO  ---     0.143            CIN to COUT           sub_1326_add_2_rep_19_29
+Route         1   e 0.020                                  n13373
+FCI_TO_FCO  ---     0.143            CIN to COUT           sub_1326_add_2_rep_19_31
+Route         1   e 0.020                                  n13374
+FCI_TO_F    ---     0.544            CIN to S[2]           sub_1326_add_2_rep_19_33
+Route         2   e 1.242                                  n9118
+LUT4        ---     0.448              A to Z              mux_1692_i1_4_lut_else_4_lut
+Route         1   e 0.020                                  n14478
+MUXL5       ---     0.212           BLUT to Z              i5660
+Route        34   e 1.706                                  n187
+A1_TO_FCO   ---     0.752           B[2] to COUT           tri_cnt_1647_add_4_3
+Route         1   e 0.020                                  n13272
+FCI_TO_FCO  ---     0.143            CIN to COUT           tri_cnt_1647_add_4_5
+Route         1   e 0.020                                  n13273
+FCI_TO_FCO  ---     0.143            CIN to COUT           tri_cnt_1647_add_4_7
+Route         1   e 0.020                                  n13274
+FCI_TO_FCO  ---     0.143            CIN to COUT           tri_cnt_1647_add_4_9
+Route         1   e 0.020                                  n13275
+FCI_TO_FCO  ---     0.143            CIN to COUT           tri_cnt_1647_add_4_11
+Route         1   e 0.020                                  n13276
+FCI_TO_FCO  ---     0.143            CIN to COUT           tri_cnt_1647_add_4_13
+Route         1   e 0.020                                  n13277
+FCI_TO_FCO  ---     0.143            CIN to COUT           tri_cnt_1647_add_4_15
+Route         1   e 0.020                                  n13278
+FCI_TO_FCO  ---     0.143            CIN to COUT           tri_cnt_1647_add_4_17
+Route         1   e 0.020                                  n13279
+FCI_TO_FCO  ---     0.143            CIN to COUT           tri_cnt_1647_add_4_19
+Route         1   e 0.020                                  n13280
+FCI_TO_FCO  ---     0.143            CIN to COUT           tri_cnt_1647_add_4_21
+Route         1   e 0.020                                  n13281
+FCI_TO_FCO  ---     0.143            CIN to COUT           tri_cnt_1647_add_4_23
+Route         1   e 0.020                                  n13282
+FCI_TO_FCO  ---     0.143            CIN to COUT           tri_cnt_1647_add_4_25
+Route         1   e 0.020                                  n13283
+FCI_TO_FCO  ---     0.143            CIN to COUT           tri_cnt_1647_add_4_27
+Route         1   e 0.020                                  n13284
+FCI_TO_FCO  ---     0.143            CIN to COUT           tri_cnt_1647_add_4_29
+Route         1   e 0.020                                  n13285
+FCI_TO_FCO  ---     0.143            CIN to COUT           tri_cnt_1647_add_4_31
+Route         1   e 0.020                                  n13286
+FCI_TO_F    ---     0.544            CIN to S[2]           tri_cnt_1647_add_4_33
+Route         1   e 0.788                                  n134_adj_9
+                  --------
+                   13.400  (58.2% logic, 41.8% route), 36 logic levels.
+
+
+Error:  The following path violates requirements by 8.546ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3JX    CK             tri_cnt_1647__i0  (from clk_c +)
+   Destination:    FD1P3IX    D              tri_cnt_1647__i31  (to clk_c +)
+
+   Delay:                  13.400ns  (58.2% logic, 41.8% route), 36 logic levels.
+
+ Constraint Details:
+
+     13.400ns data_path tri_cnt_1647__i0 to tri_cnt_1647__i31 violates
+      5.000ns delay constraint less
+      0.146ns L_S requirement (totaling 4.854ns) by 8.546ns
+
+ Path Details: tri_cnt_1647__i0 to tri_cnt_1647__i31
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.403             CK to Q              tri_cnt_1647__i0 (from clk_c)
+Route         5   e 1.222                                  tri_cnt[0]
+A1_TO_FCO   ---     0.752           A[2] to COUT           sub_1326_add_2_rep_19_1
+Route         1   e 0.020                                  n13359
+FCI_TO_FCO  ---     0.143            CIN to COUT           sub_1326_add_2_rep_19_3
+Route         1   e 0.020                                  n13360
+FCI_TO_FCO  ---     0.143            CIN to COUT           sub_1326_add_2_rep_19_5
+Route         1   e 0.020                                  n13361
+FCI_TO_FCO  ---     0.143            CIN to COUT           sub_1326_add_2_rep_19_7
+Route         1   e 0.020                                  n13362
+FCI_TO_FCO  ---     0.143            CIN to COUT           sub_1326_add_2_rep_19_9
+Route         1   e 0.020                                  n13363
+FCI_TO_FCO  ---     0.143            CIN to COUT           sub_1326_add_2_rep_19_11
+Route         1   e 0.020                                  n13364
+FCI_TO_FCO  ---     0.143            CIN to COUT           sub_1326_add_2_rep_19_13
+Route         1   e 0.020                                  n13365
+FCI_TO_FCO  ---     0.143            CIN to COUT           sub_1326_add_2_rep_19_15
+Route         1   e 0.020                                  n13366
+FCI_TO_FCO  ---     0.143            CIN to COUT           sub_1326_add_2_rep_19_17
+Route         1   e 0.020                                  n13367
+FCI_TO_FCO  ---     0.143            CIN to COUT           sub_1326_add_2_rep_19_19
+Route         1   e 0.020                                  n13368
+FCI_TO_FCO  ---     0.143            CIN to COUT           sub_1326_add_2_rep_19_21
+Route         1   e 0.020                                  n13369
+FCI_TO_FCO  ---     0.143            CIN to COUT           sub_1326_add_2_rep_19_23
+Route         1   e 0.020                                  n13370
+FCI_TO_FCO  ---     0.143            CIN to COUT           sub_1326_add_2_rep_19_25
+Route         1   e 0.020                                  n13371
+FCI_TO_FCO  ---     0.143            CIN to COUT           sub_1326_add_2_rep_19_27
+Route         1   e 0.020                                  n13372
+FCI_TO_FCO  ---     0.143            CIN to COUT           sub_1326_add_2_rep_19_29
+Route         1   e 0.020                                  n13373
+FCI_TO_FCO  ---     0.143            CIN to COUT           sub_1326_add_2_rep_19_31
+Route         1   e 0.020                                  n13374
+FCI_TO_F    ---     0.544            CIN to S[2]           sub_1326_add_2_rep_19_33
+Route         2   e 1.242                                  n9118
+LUT4        ---     0.448              A to Z              mux_1692_i1_4_lut_then_4_lut
+Route         1   e 0.020                                  n14479
+MUXL5       ---     0.212           ALUT to Z              i5660
+Route        34   e 1.706                                  n187
+A1_TO_FCO   ---     0.752           B[2] to COUT           tri_cnt_1647_add_4_3
+Route         1   e 0.020                                  n13272
+FCI_TO_FCO  ---     0.143            CIN to COUT           tri_cnt_1647_add_4_5
+Route         1   e 0.020                                  n13273
+FCI_TO_FCO  ---     0.143            CIN to COUT           tri_cnt_1647_add_4_7
+Route         1   e 0.020                                  n13274
+FCI_TO_FCO  ---     0.143            CIN to COUT           tri_cnt_1647_add_4_9
+Route         1   e 0.020                                  n13275
+FCI_TO_FCO  ---     0.143            CIN to COUT           tri_cnt_1647_add_4_11
+Route         1   e 0.020                                  n13276
+FCI_TO_FCO  ---     0.143            CIN to COUT           tri_cnt_1647_add_4_13
+Route         1   e 0.020                                  n13277
+FCI_TO_FCO  ---     0.143            CIN to COUT           tri_cnt_1647_add_4_15
+Route         1   e 0.020                                  n13278
+FCI_TO_FCO  ---     0.143            CIN to COUT           tri_cnt_1647_add_4_17
+Route         1   e 0.020                                  n13279
+FCI_TO_FCO  ---     0.143            CIN to COUT           tri_cnt_1647_add_4_19
+Route         1   e 0.020                                  n13280
+FCI_TO_FCO  ---     0.143            CIN to COUT           tri_cnt_1647_add_4_21
+Route         1   e 0.020                                  n13281
+FCI_TO_FCO  ---     0.143            CIN to COUT           tri_cnt_1647_add_4_23
+Route         1   e 0.020                                  n13282
+FCI_TO_FCO  ---     0.143            CIN to COUT           tri_cnt_1647_add_4_25
+Route         1   e 0.020                                  n13283
+FCI_TO_FCO  ---     0.143            CIN to COUT           tri_cnt_1647_add_4_27
+Route         1   e 0.020                                  n13284
+FCI_TO_FCO  ---     0.143            CIN to COUT           tri_cnt_1647_add_4_29
+Route         1   e 0.020                                  n13285
+FCI_TO_FCO  ---     0.143            CIN to COUT           tri_cnt_1647_add_4_31
+Route         1   e 0.020                                  n13286
+FCI_TO_F    ---     0.544            CIN to S[2]           tri_cnt_1647_add_4_33
+Route         1   e 0.788                                  n134_adj_9
+                  --------
+                   13.400  (58.2% logic, 41.8% route), 36 logic levels.
+
+
+Error:  The following path violates requirements by 8.546ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3JX    CK             tri_cnt_1647__i0  (from clk_c +)
+   Destination:    FD1P3IX    D              tri_cnt_1647__i31  (to clk_c +)
+
+   Delay:                  13.400ns  (58.2% logic, 41.8% route), 36 logic levels.
+
+ Constraint Details:
+
+     13.400ns data_path tri_cnt_1647__i0 to tri_cnt_1647__i31 violates
+      5.000ns delay constraint less
+      0.146ns L_S requirement (totaling 4.854ns) by 8.546ns
+
+ Path Details: tri_cnt_1647__i0 to tri_cnt_1647__i31
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.403             CK to Q              tri_cnt_1647__i0 (from clk_c)
+Route         5   e 1.222                                  tri_cnt[0]
+A1_TO_FCO   ---     0.752           A[2] to COUT           sub_1326_add_2_rep_19_1
+Route         1   e 0.020                                  n13359
+FCI_TO_FCO  ---     0.143            CIN to COUT           sub_1326_add_2_rep_19_3
+Route         1   e 0.020                                  n13360
+FCI_TO_FCO  ---     0.143            CIN to COUT           sub_1326_add_2_rep_19_5
+Route         1   e 0.020                                  n13361
+FCI_TO_FCO  ---     0.143            CIN to COUT           sub_1326_add_2_rep_19_7
+Route         1   e 0.020                                  n13362
+FCI_TO_FCO  ---     0.143            CIN to COUT           sub_1326_add_2_rep_19_9
+Route         1   e 0.020                                  n13363
+FCI_TO_FCO  ---     0.143            CIN to COUT           sub_1326_add_2_rep_19_11
+Route         1   e 0.020                                  n13364
+FCI_TO_FCO  ---     0.143            CIN to COUT           sub_1326_add_2_rep_19_13
+Route         1   e 0.020                                  n13365
+FCI_TO_FCO  ---     0.143            CIN to COUT           sub_1326_add_2_rep_19_15
+Route         1   e 0.020                                  n13366
+FCI_TO_FCO  ---     0.143            CIN to COUT           sub_1326_add_2_rep_19_17
+Route         1   e 0.020                                  n13367
+FCI_TO_FCO  ---     0.143            CIN to COUT           sub_1326_add_2_rep_19_19
+Route         1   e 0.020                                  n13368
+FCI_TO_FCO  ---     0.143            CIN to COUT           sub_1326_add_2_rep_19_21
+Route         1   e 0.020                                  n13369
+FCI_TO_FCO  ---     0.143            CIN to COUT           sub_1326_add_2_rep_19_23
+Route         1   e 0.020                                  n13370
+FCI_TO_FCO  ---     0.143            CIN to COUT           sub_1326_add_2_rep_19_25
+Route         1   e 0.020                                  n13371
+FCI_TO_FCO  ---     0.143            CIN to COUT           sub_1326_add_2_rep_19_27
+Route         1   e 0.020                                  n13372
+FCI_TO_FCO  ---     0.143            CIN to COUT           sub_1326_add_2_rep_19_29
+Route         1   e 0.020                                  n13373
+FCI_TO_FCO  ---     0.143            CIN to COUT           sub_1326_add_2_rep_19_31
+Route         1   e 0.020                                  n13374
+FCI_TO_F    ---     0.544            CIN to S[2]           sub_1326_add_2_rep_19_33
+Route         2   e 1.242                                  n9118
+LUT4        ---     0.448              A to Z              mux_1692_i1_4_lut_then_4_lut
+Route         1   e 0.020                                  n14479
+MUXL5       ---     0.212           ALUT to Z              i5660
+Route        34   e 1.706                                  n187
+A1_TO_FCO   ---     0.752           B[2] to COUT           tri_cnt_1647_add_4_3
+Route         1   e 0.020                                  n13272
+FCI_TO_FCO  ---     0.143            CIN to COUT           tri_cnt_1647_add_4_5
+Route         1   e 0.020                                  n13273
+FCI_TO_FCO  ---     0.143            CIN to COUT           tri_cnt_1647_add_4_7
+Route         1   e 0.020                                  n13274
+FCI_TO_FCO  ---     0.143            CIN to COUT           tri_cnt_1647_add_4_9
+Route         1   e 0.020                                  n13275
+FCI_TO_FCO  ---     0.143            CIN to COUT           tri_cnt_1647_add_4_11
+Route         1   e 0.020                                  n13276
+FCI_TO_FCO  ---     0.143            CIN to COUT           tri_cnt_1647_add_4_13
+Route         1   e 0.020                                  n13277
+FCI_TO_FCO  ---     0.143            CIN to COUT           tri_cnt_1647_add_4_15
+Route         1   e 0.020                                  n13278
+FCI_TO_FCO  ---     0.143            CIN to COUT           tri_cnt_1647_add_4_17
+Route         1   e 0.020                                  n13279
+FCI_TO_FCO  ---     0.143            CIN to COUT           tri_cnt_1647_add_4_19
+Route         1   e 0.020                                  n13280
+FCI_TO_FCO  ---     0.143            CIN to COUT           tri_cnt_1647_add_4_21
+Route         1   e 0.020                                  n13281
+FCI_TO_FCO  ---     0.143            CIN to COUT           tri_cnt_1647_add_4_23
+Route         1   e 0.020                                  n13282
+FCI_TO_FCO  ---     0.143            CIN to COUT           tri_cnt_1647_add_4_25
+Route         1   e 0.020                                  n13283
+FCI_TO_FCO  ---     0.143            CIN to COUT           tri_cnt_1647_add_4_27
+Route         1   e 0.020                                  n13284
+FCI_TO_FCO  ---     0.143            CIN to COUT           tri_cnt_1647_add_4_29
+Route         1   e 0.020                                  n13285
+FCI_TO_FCO  ---     0.143            CIN to COUT           tri_cnt_1647_add_4_31
+Route         1   e 0.020                                  n13286
+FCI_TO_F    ---     0.544            CIN to S[2]           tri_cnt_1647_add_4_33
+Route         1   e 0.788                                  n134_adj_9
+                  --------
+                   13.400  (58.2% logic, 41.8% route), 36 logic levels.
+
+Warning: 13.546 ns is the maximum delay for this constraint.
+
+
+
+================================================================================
+Constraint: create_clock -period 5.000000 -name clk0 [get_nets clk_input]
+            594 items scored, 418 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Error:  The following path violates requirements by 3.597ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3IX    CK             button_output_i0  (from clk_input +)
+   Destination:    FD1P3AX    D              r1_i3  (to clk_input +)
+
+   Delay:                   8.451ns  (28.5% logic, 71.5% route), 6 logic levels.
+
+ Constraint Details:
+
+      8.451ns data_path button_output_i0 to r1_i3 violates
+      5.000ns delay constraint less
+      0.146ns L_S requirement (totaling 4.854ns) by 3.597ns
+
+ Path Details: button_output_i0 to r1_i3
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.403             CK to Q              button_output_i0 (from clk_input)
+Route        26   e 1.741                                  button_output[0]
+LUT4        ---     0.448              B to Z              i1_4_lut_adj_14
+Route         4   e 1.120                                  n4_adj_43
+LUT4        ---     0.448              B to Z              i2_3_lut_rep_146
+Route         7   e 1.255                                  clk_input_enable_17
+LUT4        ---     0.448              A to Z              i2_3_lut_4_lut_adj_34
+Route         4   e 1.120                                  n5610
+LUT4        ---     0.448              C to Z              n14370_bdd_3_lut
+Route         1   e 0.020                                  n14371
+MUXL5       ---     0.212           BLUT to Z              i5627
+Route         1   e 0.788                                  n14372
+                  --------
+                    8.451  (28.5% logic, 71.5% route), 6 logic levels.
+
+
+Error:  The following path violates requirements by 3.597ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3IX    CK             button_output_i0  (from clk_input +)
+   Destination:    FD1P3AX    D              r1_i2  (to clk_input +)
+
+   Delay:                   8.451ns  (28.5% logic, 71.5% route), 6 logic levels.
+
+ Constraint Details:
+
+      8.451ns data_path button_output_i0 to r1_i2 violates
+      5.000ns delay constraint less
+      0.146ns L_S requirement (totaling 4.854ns) by 3.597ns
+
+ Path Details: button_output_i0 to r1_i2
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.403             CK to Q              button_output_i0 (from clk_input)
+Route        26   e 1.741                                  button_output[0]
+LUT4        ---     0.448              B to Z              i1_4_lut_adj_14
+Route         4   e 1.120                                  n4_adj_43
+LUT4        ---     0.448              B to Z              i2_3_lut_rep_146
+Route         7   e 1.255                                  clk_input_enable_17
+LUT4        ---     0.448              A to Z              i2_3_lut_4_lut_adj_34
+Route         4   e 1.120                                  n5610
+LUT4        ---     0.448              C to Z              i5456_3_lut_4_lut
+Route         1   e 0.020                                  n5514
+MUXL5       ---     0.212           BLUT to Z              mux_708_i3
+Route         1   e 0.788                                  n5550
+                  --------
+                    8.451  (28.5% logic, 71.5% route), 6 logic levels.
+
+
+Error:  The following path violates requirements by 3.597ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3IX    CK             button_output_i0  (from clk_input +)
+   Destination:    FD1P3AY    D              r1_i0  (to clk_input +)
+
+   Delay:                   8.451ns  (28.5% logic, 71.5% route), 6 logic levels.
+
+ Constraint Details:
+
+      8.451ns data_path button_output_i0 to r1_i0 violates
+      5.000ns delay constraint less
+      0.146ns L_S requirement (totaling 4.854ns) by 3.597ns
+
+ Path Details: button_output_i0 to r1_i0
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.403             CK to Q              button_output_i0 (from clk_input)
+Route        26   e 1.741                                  button_output[0]
+LUT4        ---     0.448              B to Z              i1_4_lut_adj_14
+Route         4   e 1.120                                  n4_adj_43
+LUT4        ---     0.448              B to Z              i2_3_lut_rep_146
+Route         7   e 1.255                                  clk_input_enable_17
+LUT4        ---     0.448              A to Z              i2_3_lut_4_lut_adj_34
+Route         4   e 1.120                                  n5610
+LUT4        ---     0.448              C to Z              i5453_3_lut_4_lut_4_lut
+Route         1   e 0.020                                  n5516
+MUXL5       ---     0.212           BLUT to Z              mux_708_i1
+Route         1   e 0.788                                  n5552
+                  --------
+                    8.451  (28.5% logic, 71.5% route), 6 logic levels.
+
+Warning: 8.597 ns is the maximum delay for this constraint.
+
+
+<A name="mtw1_rs"></A><B><U><big>Timing Report Summary</big></U></B>
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk1 [get_nets clk_c]                   |     5.000 ns|    13.546 ns|    36 *
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk0 [get_nets clk_input]               |     5.000 ns|     8.597 ns|     6 *
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+2 constraints not met.
+
+--------------------------------------------------------------------------------
+Critical Nets                           |   Loads|  Errors| % of total
+--------------------------------------------------------------------------------
+n187                                    |      34|    3245|     71.89%
+                                        |        |        |
+n13279                                  |       1|    3125|     69.23%
+                                        |        |        |
+n13278                                  |       1|    3117|     69.05%
+                                        |        |        |
+n13280                                  |       1|    3053|     67.63%
+                                        |        |        |
+n13277                                  |       1|    3025|     67.01%
+                                        |        |        |
+n13281                                  |       1|    2901|     64.27%
+                                        |        |        |
+n9118                                   |       2|    2881|     63.82%
+                                        |        |        |
+n13369                                  |       1|    2881|     63.82%
+                                        |        |        |
+n13370                                  |       1|    2881|     63.82%
+                                        |        |        |
+n13371                                  |       1|    2881|     63.82%
+                                        |        |        |
+n13372                                  |       1|    2881|     63.82%
+                                        |        |        |
+n13373                                  |       1|    2881|     63.82%
+                                        |        |        |
+n13374                                  |       1|    2881|     63.82%
+                                        |        |        |
+n13368                                  |       1|    2879|     63.78%
+                                        |        |        |
+n13367                                  |       1|    2871|     63.60%
+                                        |        |        |
+n13276                                  |       1|    2848|     63.09%
+                                        |        |        |
+n13366                                  |       1|    2839|     62.89%
+                                        |        |        |
+n13365                                  |       1|    2767|     61.30%
+                                        |        |        |
+n13282                                  |       1|    2653|     58.77%
+                                        |        |        |
+n13364                                  |       1|    2633|     58.33%
+                                        |        |        |
+n13275                                  |       1|    2572|     56.98%
+                                        |        |        |
+n13363                                  |       1|    2417|     53.54%
+                                        |        |        |
+n13283                                  |       1|    2334|     51.71%
+                                        |        |        |
+n13274                                  |       1|    2176|     48.21%
+                                        |        |        |
+n13362                                  |       1|    2105|     46.63%
+                                        |        |        |
+n13284                                  |       1|    1894|     41.96%
+                                        |        |        |
+n13361                                  |       1|    1681|     37.24%
+                                        |        |        |
+n13273                                  |       1|    1632|     36.15%
+                                        |        |        |
+n14479                                  |       1|    1445|     32.01%
+                                        |        |        |
+n14478                                  |       1|    1436|     31.81%
+                                        |        |        |
+n13285                                  |       1|    1302|     28.84%
+                                        |        |        |
+n13360                                  |       1|    1129|     25.01%
+                                        |        |        |
+n13272                                  |       1|     916|     20.29%
+                                        |        |        |
+n146                                    |       3|     833|     18.45%
+                                        |        |        |
+n13207                                  |       1|     833|     18.45%
+                                        |        |        |
+n13208                                  |       1|     833|     18.45%
+                                        |        |        |
+n13209                                  |       1|     833|     18.45%
+                                        |        |        |
+n13210                                  |       1|     833|     18.45%
+                                        |        |        |
+n13211                                  |       1|     833|     18.45%
+                                        |        |        |
+n13212                                  |       1|     833|     18.45%
+                                        |        |        |
+n13213                                  |       1|     833|     18.45%
+                                        |        |        |
+n13214                                  |       1|     833|     18.45%
+                                        |        |        |
+n14425                                  |      33|     833|     18.45%
+                                        |        |        |
+n13206                                  |       1|     831|     18.41%
+                                        |        |        |
+n13228                                  |       1|     831|     18.41%
+                                        |        |        |
+n13229                                  |       1|     831|     18.41%
+                                        |        |        |
+n13205                                  |       1|     821|     18.19%
+                                        |        |        |
+n13227                                  |       1|     821|     18.19%
+                                        |        |        |
+n13230                                  |       1|     821|     18.19%
+                                        |        |        |
+n13204                                  |       1|     795|     17.61%
+                                        |        |        |
+n13226                                  |       1|     795|     17.61%
+                                        |        |        |
+n13231                                  |       1|     795|     17.61%
+                                        |        |        |
+n13203                                  |       1|     745|     16.50%
+                                        |        |        |
+n13225                                  |       1|     745|     16.50%
+                                        |        |        |
+n13232                                  |       1|     745|     16.50%
+                                        |        |        |
+n13202                                  |       1|     663|     14.69%
+                                        |        |        |
+n13224                                  |       1|     663|     14.69%
+                                        |        |        |
+n13233                                  |       1|     663|     14.69%
+                                        |        |        |
+n13201                                  |       1|     541|     11.98%
+                                        |        |        |
+n13223                                  |       1|     541|     11.98%
+                                        |        |        |
+n13234                                  |       1|     541|     11.98%
+                                        |        |        |
+n134_adj_9                              |       1|     534|     11.83%
+                                        |        |        |
+n13286                                  |       1|     534|     11.83%
+                                        |        |        |
+tri_cnt[0]                              |       5|     504|     11.17%
+                                        |        |        |
+--------------------------------------------------------------------------------
+
+
+<A name="mtw1_ts"></A><B><U><big>Timing summary:</big></U></B>
+---------------
+
+Timing errors: 4514  Score: 30766202
+
+Constraints cover  104632 paths, 893 nets, and 2365 connections (63.8% coverage)
+
+
+Peak memory: 110641152 bytes, TRCE: 14958592 bytes, DLYMAN: 163840 bytes
+CPU_TIME_REPORT: 0 secs 
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>
